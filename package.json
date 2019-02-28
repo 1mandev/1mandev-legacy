@@ -1,0 +1,14 @@
+{
+  "name": "1mandev",
+  "version": "1.0.0",
+  "description": "Battle Proven Developers at Service",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "node-sass scss/md-main.scss css/main.css -w"
+  },
+  "author": "Mr.Shuvo",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^4.11.0"
+  }
+}

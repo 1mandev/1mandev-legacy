@@ -1,0 +1,49 @@
+/*==================== *** Media Quaries *** ====================*/
+
+/*==================================
+  Medium Large Screen: Above 1366px
+====================================*/
+@media screen and (min-width: 1366px) {
+
+}
+
+/*===========================
+  Large Screen: Above 1440px
+=============================*/
+@media only screen and (min-width: 1440px) {
+
+}
+
+/*=================================
+  Extra Large Screen: Above 1920px
+===================================*/
+@media only screen and (min-width: 1920px) {
+
+}
+
+/*========== Default Style 1366px - 1024px ==========*/
+
+/*============================
+  Medium Screen: Below 1024px
+==============================*/
+@media only screen and (max-width: 1024px) {
+
+
+}
+
+/*==========================
+  Small Screen: Below 768px
+============================*/
+@media only screen and (max-width: 768px) {
+
+
+
+}
+
+/*================================
+  Extra Small Screen: Below 480px
+==================================*/
+@media only screen and (max-width: 480px) {
+
+
+}
