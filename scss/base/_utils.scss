@@ -1,0 +1,33 @@
+.content-box {
+  width: 88%;
+  margin: 0 auto;
+  
+}
+
+section {
+  margin-top: 16rem;
+  margin-bottom: 16rem;
+
+  & .section__box {
+    text-align: center;
+    margin: auto;
+    padding-bottom: 3.2rem;
+
+    &--intro {
+      font-size: 3.2rem;
+      text-transform: uppercase;
+      color: $primary-color;
+      padding-bottom: 1.6rem;
+    }
+
+    &--icon {
+      font-size: 4rem;
+      padding-bottom: 1.6rem;
+    }
+
+    &--text {
+      width: 70%;
+      margin: auto;
+    }
+  }
+}

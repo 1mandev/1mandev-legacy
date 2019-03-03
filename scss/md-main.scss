@@ -1,162 +1,27 @@
-$primary-color: #f68657;
-$seconadry-color: #f6b352;
-$dark-color: #383a3f;
-$light-color: #fefefe;
+@import url('../assets/fonts/fonts.css');
 
-$heading-fonts: 'Exo', Arial, Helvetica, sans-serif;
-$text-fonts: 'Ubuntu', Arial, Helvetica, sans-serif;
+@import 'abstracts/variables';
+@import 'abstracts/mixins';
+@import 'abstracts/functions';
 
-*, *::after, *::before{
-  margin: 0;
-  padding: 0;
-  box-sizing: initial;
-}
+@import 'base/base';
+@import 'base/animations';
+@import 'base/utils';
 
-::selection{
-  background-color: $dark-color;
-  color: $primary-color;
-}
+@import 'components/button';
 
-html{
-  font-size: 62.5%;
-}
+@import 'layout/grid';
+@import 'layout/header';
 
-body {
-  font-family: $text-fonts;
-  font-size: 1.6rem;
-  color: $dark-color;
-  line-height: 1.4;
-  box-sizing: border-box;
-}
-
-.md__btn{
-  color: $light-color;
-  padding: 0.9rem 2.5rem;
-  text-decoration: none;
-  outline: none;
-  border-radius: 2.5rem;
-  box-shadow: 0.15rem 0.15rem 0.3rem rgba($dark-color, 0.25);
-  -webkit-border-radius: 2.5rem;
-  -moz-border-radius: 2.5rem;
-  -ms-border-radius: 2.5rem;
-  -o-border-radius: 2.5rem;
-  transition: 0.1s all ease-in-out ;
-  -webkit-transition: 0.1s all ease-in-out ;
-  -moz-transition: 0.1s all ease-in-out ;
-  -ms-transition: 0.1s all ease-in-out ;
-  -o-transition: 0.1s all ease-in-out ;
-}
-
-.md__btn--primary{
-  background-color: $primary-color;
-}
-
-.md__btn--secondary{
-  background-color: $seconadry-color;
-}
-
-.md__btn--dark{
-  background-color: $dark-color;
-}
-
-.md__btn--light-pri{
-  background-color: $light-color;
-  color: $primary-color;
-}
-
-.md__btn--light-sec{
-  background-color: $light-color;
-  color: $seconadry-color;
-}
-
-.md__btn--primary-o{
-  color: $primary-color;
-  border: 0.2rem solid $primary-color;
-  padding: 0.8rem 2.3rem;
-}
-
-.md__btn--secondary-o{
-  color: $seconadry-color;
-  border: 0.2rem solid $seconadry-color;
-  padding: 0.8rem 2.3rem;
-}
-
-.md__btn--dark-o{
-  color: $dark-color;
-  border: 0.2rem solid $dark-color;
-  padding: 0.7rem 2.3rem;
-}
-
-
-.md__btn:hover{
-  opacity: 0.9;
-  box-shadow: none;
-  text-decoration: none;
-  outline: none;  
-}
-
-.md__btn:active{
-  transform: translateY(-0.1rem);
-  -webkit-transform: translateY(-0.1rem);
-  -moz-transform: translateY(-0.1rem);
-  -ms-transform: translateY(-0.1rem);
-  -o-transform: translateY(-0.1rem);
-}
+@import 'pages/home';
 
 
 
-.header{
-  height: 100vh;
-  margin: auto;
-  background-image: linear-gradient( to right bottom, rgba($primary-color, 0.95), rgba($seconadry-color, 0.95)), url('../assets/img/hero.png');
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: center;
-}
 
-.header__site-logo img{
-  width: 9rem;
-  margin-top: 0.8rem;
-  margin-left: 1.6rem;
-}
 
-.header__hero-sec{
-  text-align: center;
-  position: absolute;
-  width: 95%;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  -webkit-transform: translate(-50%, -50%);
-  -moz-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  -o-transform: translate(-50%, -50%);
-}
 
-.hero-sec__tagline{
-  font-family: $heading-fonts;
-  font-size: 4rem;
-  
-}
 
-.hero-sec__intro{
-  font-size: 1.4rem;
-  padding: 2rem 0;
-  width: 60%;
-  margin: auto;
-}
 
-.hero-sec__c2a{
-  text-align: center;
-  padding-top: 1rem;
-  backface-visibility: hidden;
-  -webkit-backface-visibility: hidden;
-}
 
-.hero-sec__c2a a{
-  margin-right: 1rem;
-}
 
-.hero-sec__c2a a:last-of-type{
-  margin-right: 0;
-}
+

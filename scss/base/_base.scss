@@ -1,0 +1,29 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: initial;
+}
+
+::selection {
+  background-color: $dark-color;
+  color: $primary-color;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: $text-fonts;
+  font-size: 1.4rem;
+  color: $dark-color;
+  line-height: 1.6;
+  box-sizing: border-box;
+  margin: .8rem;
+}
+
+h1, h2, h3, h4, h5, h6{
+  font-family: $heading-fonts;
+}

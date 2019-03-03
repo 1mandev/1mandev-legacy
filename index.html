@@ -1,50 +1,106 @@
-  <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  
+
   <title>1ManDev | Battle Proven Developers at Services</title>
 
-
-  <!-- ========== Fonts ========== -->
-  <link href="assets/fonts/fonts.css" rel="stylesheet">
   <!-- ========== Icons ========== -->
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ"
+    crossorigin="anonymous">
   <!-- ========== Main Stylesheet ========== -->
   <link rel="stylesheet" href="css/main.css">
   <link rel="stylesheet" href="css/media-quaries.css">
-  <link rel="stylesheet" href="css/md-animation.css">
 
 </head>
+
 <body>
+  <header class="navigation">
+    <nav>
 
-  <header class="header">
-    <h1 class="header__site-logo">
-      <a href="#"> 
-        <img src="assets/img/logo-white.png" alt="1ManDev Site Logo">
-      </a>
-    </h1>
-
-    <div class="header__hero-sec">
-      <div class="md-anim-slideInUp md-anim-easeInOut">
-          <h2 class="hero-sec__tagline">Battle Proven Developers at Service</h2>
-          <p class="hero-sec__intro">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iste fugit esse pariatur dolor reprehenderit. Repellendus praesentium possimus provident nobis quidem perspiciatis?</p>
-        
-      </div>
-      <div class="hero-sec__c2a md-anim-slideInDown md-anim-easeInOut">
-        <a href="#" class="md__btn md__btn--light-pri">View Services</a>
-        <a href="#" class="md__btn md__btn--light-sec">Get Quootes</a>
-      </div>
-    </div>
-
+    </nav>
   </header>
 
   <main>
+    <!-- Hero Box-->
+    <section class="hero">
+      <h1 class="hero__site-logo">
+        <a href="#">
+          <img src="assets/img/logo-white.png" alt="1ManDev Site Logo">
+        </a>
+      </h1>
+      <div class="hero__box">
+        <div class="md-anim-slideInUp md-anim-easeInOut">
+          <h2 class="hero__box--tagline">Battle Proven Developers at Service</h2>
+          <p class="hero__box--intro">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iste fugit esse
+            pariatur dolor reprehenderit. Repellendus praesentium possimus provident nobis quidem perspiciatis?</p>
+
+        </div>
+        <div class="hero__box--c2a md-anim-slideInDown md-anim-easeInOut">
+          <a href="#" class="md__btn md__btn--primary">View Services</a>
+          <a href="#" class="md__btn md__btn--secondary">Get Quootes</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Story Section -->
+    <section class="story">
+      <div class="content-box">
+        <div class="story__box row">
+          <div class="col-1-of-2">
+            <div class="story__box--intro">
+              <h2>A True <span>Story Indeed.</span></h2>
+              <p><i class="fa fa-arrow-circle-right md-anim-smallSlideRightLeft md-anim-infinity md-anim-delay md-anim-easeInOut"></i></p>
+            </div>
+          </div>
+          <div class="col-1-of-2">
+            <p class="story__box--text">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nostrum, dignissimos, at commodi nulla
+              ducimus
+              ipsa voluptatibus beatae atque id fuga minus perferendis molestiae pariatur voluptatem? Asperiores
+              omnis
+              rerum ipsa sunt. Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus autem pariatur,
+              culpa dolorem voluptatem, laboriosam similique numquam eaque saepe magnam dolore facere officia minus
+              esse vitae incidunt error ab itaque.
+            </p>
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- Services Section -->
+    <section class="services">
+      <div class="section__box">
+        <h2 class="section__box--intro">Let's Talk about Our Services</h2>
+        <i class="section__box--icon md-anim-smallSlideDownUp md-anim-infinity md-anim-delay md-anim-easeInOut fa fa-arrow-circle-down"></i>
+        <p class="section__box--text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem tempora tempore quos maiores totam. Possimus laboriosam quo, quis fugiat omnis dolore tempora accusantium error, earum repellendus officiis minus non veritatis.</p>
+      </div>
+
+      <div class="services__box">
+        <div class="content-box">
+          <div class="row">
+            <div class="services__box--content">
+                <i class="services__box--icon fa fa-arrow-circle-down"></i>
+                <h2 class="services__box--intro">
+                  Web Development
+                </h2>
+                <p class="services__box--text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis repellendus minus aperiam, inventore quas quam iusto ab! Expedita aliquid esse dicta quod molestias, quibusdam ipsam consectetur inventore placeat ipsa obcaecati?</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </section>
+
+
 
   </main>
-  
+
   <footer>
 
   </footer>
@@ -52,5 +108,22 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <!-- ========== Main Script ========== -->
   <script src="js/main.js"></script>
+
+  <!-- Twak Script -->
+  <script type="text/javascript">
+    var Tawk_API = Tawk_API || {},
+      Tawk_LoadStart = new Date();
+    (function () {
+      var s1 = document.createElement("script"),
+        s0 = document.getElementsByTagName("script")[0];
+      s1.async = true;
+      s1.src = 'https://embed.tawk.to/5c7a80e0a726ff2eea5a40c0/default';
+      s1.charset = 'UTF-8';
+      s1.setAttribute('crossorigin', '*');
+      s0.parentNode.insertBefore(s1, s0);
+    })();
+  </script>
+
 </body>
+
 </html>

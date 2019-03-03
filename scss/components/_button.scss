@@ -1,0 +1,64 @@
+.md__btn {
+  color: $light-color;
+  padding: 1rem 2.5rem;
+  text-decoration: none;
+  outline: none;
+  border-radius: 2.5rem;
+  box-shadow: 0.1rem 0.1rem 0.3rem rgba($dark-color, 0.2);
+  -webkit-border-radius: 2.5rem;
+  -moz-border-radius: 2.5rem;
+  -ms-border-radius: 2.5rem;
+  -o-border-radius: 2.5rem;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+
+
+  &:hover {
+    opacity: 0.9;
+    box-shadow: none;
+    text-decoration: none;
+    outline: none;
+  }
+
+  
+
+  &--primary {
+    background-color: $primary-color;
+  }
+
+  &--secondary {
+    background-color: $seconadry-color;
+  }
+
+  &--dark {
+    background-color: $dark-color;
+  }
+
+  &--light-pri {
+    background-color: $light-color;
+    color: $primary-color;
+  }
+
+  &--light-sec {
+    background-color: $light-color;
+    color: $seconadry-color;
+  }
+
+  &--primary-o {
+    color: $primary-color;
+    border: 0.2rem solid $primary-color;
+    padding: 0.8rem 2.3rem;
+  }
+
+  &--secondary-o {
+    color: $seconadry-color;
+    border: 0.2rem solid $seconadry-color;
+    padding: 0.8rem 2.3rem;
+  }
+
+  &--dark-o {
+    color: $dark-color;
+    border: 0.2rem solid $dark-color;
+    padding: 0.7rem 2.3rem;
+  }
+}
