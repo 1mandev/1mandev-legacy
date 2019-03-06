@@ -2,6 +2,8 @@
   color: $light-color;
   padding: 1rem 2.5rem;
   text-decoration: none;
+  font-weight: 500;
+  border: 0.2rem solid rgba($dark-color, 0.05);
   outline: none;
   border-radius: 2.5rem;
   box-shadow: 0.1rem 0.1rem 0.3rem rgba($dark-color, 0.2);
@@ -27,11 +29,12 @@
   }
 
   &--secondary {
-    background-color: $seconadry-color;
+    background-color: $secondary-color;
   }
 
   &--dark {
     background-color: $dark-color;
+    border: 0.2rem solid rgba($light-color, 0.08);
   }
 
   &--light-pri {
@@ -41,7 +44,12 @@
 
   &--light-sec {
     background-color: $light-color;
-    color: $seconadry-color;
+    color: $secondary-color;
+  }
+
+  &--light-dark{
+    background-color: $light-color;
+    color: $dark-color;
   }
 
   &--primary-o {
@@ -51,8 +59,8 @@
   }
 
   &--secondary-o {
-    color: $seconadry-color;
-    border: 0.2rem solid $seconadry-color;
+    color: $secondary-color;
+    border: 0.2rem solid $secondary-color;
     padding: 0.8rem 2.3rem;
   }
 

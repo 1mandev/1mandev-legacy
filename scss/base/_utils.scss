@@ -8,6 +8,16 @@ section {
   margin-top: 16rem;
   margin-bottom: 16rem;
 
+  .sec_iconimg{
+    width: 6rem;
+
+  }
+
+  .sec_iconimg path{
+    fill: $primary-color;
+    fill-rule: evenodd;
+  }
+
   & .section__box {
     text-align: center;
     margin: auto;

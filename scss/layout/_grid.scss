@@ -1,396 +1,62 @@
-.col{
-  width: 100%;
-  box-sizing: border-box;
-  float: left;
-  padding: 1% 1.6% 1% 0% !important;
-}
-
 .row {
-  width: auto;
-  margin-right: -6.4% !important;
-  box-sizing: border-box;
-}
+  max-width: $grid-width;
+  margin: 0 auto;
 
-/*==========  Default Screen Size:  1024px - 1366px  ==========*/
-.col-12 {
-  width: 100%;
-}
+  &:not(:last-child) {
+      margin-bottom: $gutter-vertical;
 
-.col-11 {
-  width: 91.53%;
-}
-
-.col-10 {
-  width: 83.06%;
-}
-
-.col-9 {
-  width: 74.6%;
-}
-
-.col-8 {
-  width: 66.13%;
-}
-
-.col-7 {
-  width: 57.66%;
-}
-
-.col-6 {
-  width: 49.2%;
-}
-
-.col-5 {
-  width: 40.73%;
-}
-
-.col-4 {
-  width: 32.26%;
-}
-
-.col-3 {
-  width: 23.8%;
-}
-
-.col-2 {
-  width: 15.33%;
-}
-
-.col-1 {
-  width: 6.866%;
-}
-
-/*=============================================
-  Medium Large Screen (col-ml-*): Above 1366px
-===============================================*/
-@media screen and (min-width: 1366px) {
-  .col-ml-12 {
-    width: 100%;
-  }
-
-  .col-ml-11 {
-    width: 91.53%;
-  }
-
-  .col-ml-10 {
-    width: 83.06%;
-  }
-
-  .col-ml-9 {
-    width: 74.6%;
-  }
-
-  .col-ml-8 {
-    width: 66.13%;
-  }
-
-  .col-ml-7 {
-    width: 57.66%;
-  }
-
-  .col-ml-6 {
-    width: 49.2%;
-  }
-
-  .col-ml-5 {
-    width: 40.73%;
-  }
-
-  .col-ml-4 {
-    width: 32.26%;
-  }
-
-  .col-ml-3 {
-    width: 23.8%;
-  }
-
-  .col-ml-2 {
-    width: 15.33%;
-  }
-
-  .col-ml-1 {
-    width: 6.866%;
-  }
-}
-
-/*======================================
-  Large Screen (col-lg-*): Above 1440px
-========================================*/
-@media only screen and (min-width: 1440px) {
-  .col-lg-12 {
-    width: 100%;
-  }
-
-  .col-lg-11 {
-    width: 91.53%;
-  }
-
-  .col-lg-10 {
-    width: 83.06%;
-  }
-
-  .col-lg-9 {
-    width: 74.6%;
-  }
-
-  .col-lg-8 {
-    width: 66.13%;
-  }
-
-  .col-lg-7 {
-    width: 57.66%;
-  }
-
-  .col-lg-6 {
-    width: 49.2%;
-  }
-
-  .col-lg-5 {
-    width: 40.73%;
-  }
-
-  .col-lg-4 {
-    width: 32.26%;
-  }
-
-  .col-lg-3 {
-    width: 23.8%;
-  }
-
-  .col-lg-2 {
-    width: 15.33%;
-  }
-
-  .col-lg-1 {
-    width: 6.866%;
-  }
-}
-
-/*============================================
-  Extra Large Screen (col-xl-*): Above 1920px
-==============================================*/
-@media only screen and (min-width: 1920px) {
-  .col-xl-12 {
-    width: 100%;
-  }
-
-  .col-xl-11 {
-    width: 91.53%;
-  }
-
-  .col-xl-10 {
-    width: 83.06%;
-  }
-
-  .col-xl-9 {
-    width: 74.6%;
-  }
-
-  .col-xl-8 {
-    width: 66.13%;
-  }
-
-  .col-xl-7 {
-    width: 57.66%;
+      // @include respond(tab-port) {
+      //     margin-bottom: $gutter-vertical-small;
+      // }
   }
+  
+  // @include respond(tab-port) {
+  //     max-width: 50rem;
+  //     padding: 0 3rem;
+  // }
 
-  .col-xl-6 {
-    width: 49.2%;
-  }
-
-  .col-xl-5 {
-    width: 40.73%;
-  }
-
-  .col-xl-4 {
-    width: 32.26%;
-  }
-
-  .col-xl-3 {
-    width: 23.8%;
-  }
-
-  .col-xl-2 {
-    width: 15.33%;
-  }
-
-  .col-xl-1 {
-    width: 6.866%;
-  }
-}
-
-/*=======================================
-  Medium Screen (col-md-*): Below 1024px
-=========================================*/
-@media only screen and (max-width: 1024px) {
-  .col-md-12 {
-    width: 100%;
-  }
-
-  .col-md-11 {
-    width: 91.53%;
-  }
-
-  .col-md-10 {
-    width: 83.06%;
-  }
-
-  .col-md-9 {
-    width: 74.6%;
-  }
-
-  .col-md-8 {
-    width: 66.13%;
-  }
-
-  .col-md-7 {
-    width: 57.66%;
-  }
-
-  .col-md-6 {
-    width: 49.2%;
-  }
-
-  .col-md-5 {
-    width: 40.73%;
-  }
-
-  .col-md-4 {
-    width: 32.26%;
-  }
-
-  .col-md-3 {
-    width: 23.8%;
-  }
-
-  .col-md-2 {
-    width: 15.33%;
-  }
-
-  .col-md-1 {
-    width: 6.866%;
-  }
-}
-
-
-/*=====================================
-  Small Screen (col-sm-*): Below 768px
-=======================================*/
-@media only screen and (max-width: 768px) {
-  .col-sm-12 {
-    width: 100%;
-  }
-
-  .col-sm-11 {
-    width: 91.53%;
-  }
-
-  .col-sm-10 {
-    width: 83.06%;
-  }
-
-  .col-sm-9 {
-    width: 74.6%;
-  }
-
-  .col-sm-8 {
-    width: 66.13%;
-  }
-
-  .col-sm-7 {
-    width: 57.66%;
-  }
-
-  .col-sm-6 {
-    width: 49.2%;
-  }
-
-  .col-sm-5 {
-    width: 40.73%;
-  }
-
-  .col-sm-4 {
-    width: 32.26%;
-  }
-
-  .col-sm-3 {
-    width: 23.8%;
-  }
-
-  .col-sm-2 {
-    width: 15.33%;
-  }
-
-  .col-sm-1 {
-    width: 6.866%;
-  }
-}
+  @include clearfix;
 
-/*===========================================
-  Extra Small Screen (col-xs-*): below 480px
-=============================================*/
-@media screen and (max-width: 480px) {
-  .col-xs-12 {
-    width: 100%;
-  }
-
-  .col-xs-11 {
-    width: 91.53%;
-  }
-
-  .col-xs-10 {
-    width: 83.06%;
-  }
+  [class^="col-"] {
+      float: left;
 
-  .col-xs-9 {
-    width: 74.6%;
-  }
+      &:not(:last-child) {
+          margin-right: $gutter-horizontal;
 
-  .col-xs-8 {
-    width: 66.13%;
-  }
+          // @include respond(tab-port) {
+          //     margin-right: 0;
+          //     margin-bottom: $gutter-vertical-small;
+          // }
+      }
 
-  .col-xs-7 {
-    width: 57.66%;
+      // @include respond(tab-port) {
+      //     width: 100% !important;
+      // }
   }
 
-  .col-xs-6 {
-    width: 49.2%;
+  .col-1-of-2 {
+      width: calc((100% - #{$gutter-horizontal}) / 2);
+      
   }
 
-  .col-xs-5 {
-    width: 40.73%;
+  .col-1-of-3 {
+      width: calc((100% - 2 * #{$gutter-horizontal}) / 3);
   }
 
-  .col-xs-4 {
-    width: 32.26%;
+  .col-2-of-3 {
+      width: calc(2 * ((100% - 2 * #{$gutter-horizontal}) / 3) + #{$gutter-horizontal});
   }
 
-  .col-xs-3 {
-    width: 23.8%;
+  .col-1-of-4 {
+      width: calc((100% - 3 * #{$gutter-horizontal}) / 4);
   }
 
-  .col-xs-2 {
-    width: 15.33%;
+  .col-2-of-4 {
+      width: calc(2 * ((100% - 3 * #{$gutter-horizontal}) / 4) + #{$gutter-horizontal});
   }
 
-  .col-xs-1 {
-    width: 6.866%;
+  .col-3-of-4 {
+      width: calc(3 * ((100% - 3 * #{$gutter-horizontal}) / 4) + 2 * #{$gutter-horizontal});
   }
-}
-
-/*=============== *** Clearfix *** ===============*/
-.row {
-  zoom: 1;
-}
-
-.row::before,
-.row::after {
-  content: "";
-  display: block;
-  clear: both;
-}
 
-.row::after {
-  clear: both;
 }

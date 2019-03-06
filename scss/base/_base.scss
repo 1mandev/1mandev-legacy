@@ -17,13 +17,14 @@ html {
 
 body {
   font-family: $text-fonts;
-  font-size: 1.4rem;
+  font-size: 1.3rem;
   color: $dark-color;
   line-height: 1.6;
   box-sizing: border-box;
-  margin: .8rem;
+  margin: 1rem;
 }
 
 h1, h2, h3, h4, h5, h6{
   font-family: $heading-fonts;
+  text-transform: uppercase;
 }
