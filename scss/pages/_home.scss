@@ -1,18 +1,23 @@
 .hero {
   height: 100vh;
   margin: auto;
-  background-image: linear-gradient(to right bottom, rgba($primary-color, 0.9), rgba($secondary-color, 0.9)), url('../assets/img/hero.png');
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: center;
+  background-image: linear-gradient(to right bottom, $primary-color, $secondary-color);
 
   &__site-logo img {
     width: 7.2rem;
     margin-left: 1rem;
   }
 
+  &__img img{
+    width: 50%;
+    position: absolute;
+    right: -10rem;
+    top: -12rem;
+  }
+
+
   &__box {
-    text-align: center;
+    text-align:left;
     position: absolute;
     width: 100%;
     top: 50%;
@@ -22,24 +27,20 @@
     -moz-transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
     -o-transform: translate(-50%, -50%);
+    width: 80%;
 
+    
     &--tagline {
       font-family: $heading-fonts;
-      font-size: 2.4rem;
-      
-
     }
 
     &--intro {
       padding: 2rem 0;
-      width: 70%;
-      font-size: 1.4rem;
-      margin: auto;
-      width: 65%;
+      font-size: 1.5rem;
+      width: 60%;
     }
 
     &--c2a {
-      text-align: center;
       padding-top: 1rem;
       backface-visibility: hidden;
       -webkit-backface-visibility: hidden;
@@ -71,7 +72,6 @@
 
     &--intro {
       h2 {
-        font-size: 3.2rem;
         color: $primary-color;
       }
 
@@ -127,7 +127,7 @@
     }
 
     &--icon {
-      font-size: 4rem;
+      width: 2rem;
       padding-bottom: 1.6rem;
     }
 
@@ -153,7 +153,7 @@
     &--content {
       position: relative;
       padding: 2rem 3.2rem;
-      height: 20rem;
+      height: 18rem;
       border: 0.3rem solid rgba($dark-color, 0.3);
       border-radius: 1rem;
       -webkit-border-radius: 1rem;

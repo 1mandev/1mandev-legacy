@@ -15,7 +15,7 @@ html {
 
 body {
   font-family: "Gotham", Arial, Helvetica, sans-serif;
-  font-size: 1.3rem;
+  font-size: 1.4rem;
   color: #383a3f;
   line-height: 1.6;
   box-sizing: border-box;
@@ -24,6 +24,24 @@ body {
 h1, h2, h3, h4, h5, h6 {
   font-family: "Exo", Arial, Helvetica, sans-serif;
   text-transform: uppercase; }
+
+h1 {
+  font-size: 3.2rem; }
+
+h2 {
+  font-size: 2.8rem; }
+
+h3 {
+  font-size: 2.4rem; }
+
+h4 {
+  font-size: 2rem; }
+
+h5 {
+  font-size: 1.8rem; }
+
+h6 {
+  font-size: 1.6rem; }
 
 @keyframes slideInDown {
   0% {
@@ -144,7 +162,7 @@ section {
   margin-top: 16rem;
   margin-bottom: 16rem; }
   section .sec_iconimg {
-    width: 6rem; }
+    width: 4.8rem; }
   section .sec_iconimg path {
     fill: #f68657;
     fill-rule: evenodd; }
@@ -153,12 +171,11 @@ section {
     margin: auto;
     padding-bottom: 3.2rem; }
     section .section__box--intro {
-      font-size: 3.2rem;
       text-transform: uppercase;
       color: #f68657;
       padding-bottom: 1.6rem; }
     section .section__box--icon {
-      font-size: 4rem;
+      font-size: 3rem;
       padding-bottom: 1.6rem; }
     section .section__box--text {
       width: 70%;
@@ -169,10 +186,9 @@ section {
   padding: 1rem 2.5rem;
   text-decoration: none;
   font-weight: 500;
-  border: 0.2rem solid rgba(56, 58, 63, 0.05);
   outline: none;
   border-radius: 2.5rem;
-  box-shadow: 0.1rem 0.1rem 0.3rem rgba(56, 58, 63, 0.2);
+  box-shadow: 0.1rem 0.1rem 0.3rem rgba(56, 58, 63, 0.1);
   -webkit-border-radius: 2.5rem;
   -moz-border-radius: 2.5rem;
   -ms-border-radius: 2.5rem;
@@ -189,8 +205,7 @@ section {
   .md__btn--secondary {
     background-color: #f6b352; }
   .md__btn--dark {
-    background-color: #383a3f;
-    border: 0.2rem solid rgba(254, 254, 254, 0.08); }
+    background-color: #383a3f; }
   .md__btn--light-pri {
     background-color: #fefefe;
     color: #f68657; }
@@ -264,15 +279,17 @@ section {
 .hero {
   height: 100vh;
   margin: auto;
-  background-image: linear-gradient(to right bottom, rgba(246, 134, 87, 0.9), rgba(246, 179, 82, 0.9)), url("../assets/img/hero.png");
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: center; }
+  background-image: linear-gradient(to right bottom, #f68657, #f6b352); }
   .hero__site-logo img {
     width: 7.2rem;
     margin-left: 1rem; }
+  .hero__img img {
+    width: 50%;
+    position: absolute;
+    right: -10rem;
+    top: -12rem; }
   .hero__box {
-    text-align: center;
+    text-align: left;
     position: absolute;
     width: 100%;
     top: 50%;
@@ -281,18 +298,15 @@ section {
     -webkit-transform: translate(-50%, -50%);
     -moz-transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
-    -o-transform: translate(-50%, -50%); }
+    -o-transform: translate(-50%, -50%);
+    width: 80%; }
     .hero__box--tagline {
-      font-family: "Exo", Arial, Helvetica, sans-serif;
-      font-size: 2.4rem; }
+      font-family: "Exo", Arial, Helvetica, sans-serif; }
     .hero__box--intro {
       padding: 2rem 0;
-      width: 70%;
-      font-size: 1.4rem;
-      margin: auto;
-      width: 65%; }
+      font-size: 1.5rem;
+      width: 60%; }
     .hero__box--c2a {
-      text-align: center;
       padding-top: 1rem;
       backface-visibility: hidden;
       -webkit-backface-visibility: hidden; }
@@ -313,7 +327,6 @@ section {
     -ms-border-radius: 0.8rem;
     -o-border-radius: 0.8rem; }
     .story__box--intro h2 {
-      font-size: 3.2rem;
       color: #f68657; }
     .story__box--intro i {
       color: #383a3f;
@@ -351,7 +364,7 @@ section {
     -ms-transform: translateY(-1rem) scale(1.05);
     -o-transform: translateY(-1rem) scale(1.05); }
   .services__box--icon {
-    font-size: 4rem;
+    width: 2rem;
     padding-bottom: 1.6rem; }
   .services__box--intro {
     font-size: 2rem;
@@ -367,7 +380,7 @@ section {
     .stack__box--content {
       position: relative;
       padding: 2rem 3.2rem;
-      height: 20rem;
+      height: 18rem;
       border: 0.3rem solid rgba(56, 58, 63, 0.3);
       border-radius: 1rem;
       -webkit-border-radius: 1rem;

@@ -3,10 +3,10 @@
   padding: 1rem 2.5rem;
   text-decoration: none;
   font-weight: 500;
-  border: 0.2rem solid rgba($dark-color, 0.05);
+  // border: 0.2rem solid rgba($light-color, 0.05);
   outline: none;
   border-radius: 2.5rem;
-  box-shadow: 0.1rem 0.1rem 0.3rem rgba($dark-color, 0.2);
+  box-shadow: 0.1rem 0.1rem 0.3rem rgba($dark-color, 0.1);
   -webkit-border-radius: 2.5rem;
   -moz-border-radius: 2.5rem;
   -ms-border-radius: 2.5rem;
@@ -34,7 +34,6 @@
 
   &--dark {
     background-color: $dark-color;
-    border: 0.2rem solid rgba($light-color, 0.08);
   }
 
   &--light-pri {
