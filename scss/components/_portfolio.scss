@@ -1,0 +1,123 @@
+.portfolio-wrapper {
+  width: 100%;
+  margin-top: 2rem;
+}
+
+.portfolio {
+  background-color: $light-color-1;
+  width: 100%;
+  max-width: 120rem;
+  padding-top: 4rem;
+  border-radius: 10px;
+  margin: 0 auto;
+  overflow: hidden;
+
+  &__content {
+    padding: 0 3rem;
+    display: flex;
+    align-items: center;
+  }
+
+  &__gallery {
+    flex: 0 0 47%;
+  }
+
+  &__photo {
+    width: 100%;
+    max-height: 48rem;
+    object-fit: contain;
+    object-position: 0 0;
+  }
+
+  &__description {
+    flex: 1;
+    padding-right: 6rem;
+    padding-left: 1.5rem;
+
+    &--main {
+      padding: 4rem 0 4rem;
+    }
+
+    &--main a {
+      text-decoration: none;
+      cursor: pointer;
+      font-family: $heading-fonts;
+      font-size: 3rem;
+      color: $primary-color;
+      display: inline-block;
+      text-transform: uppercase;
+    }
+
+    &--main p {
+      padding-top: 1rem;
+      max-width: 50rem;
+      font-size: 1.6rem;
+    }
+
+    &--stack h4 {
+      padding-bottom: 1.1rem;
+    }
+
+    &--stack span {
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+      height: 6rem;
+      width: 6rem;
+      border-radius: 50%;
+      text-transform: uppercase;
+      border: 1px solid $dark-color;
+      color: $primary-color;
+      font-weight: bold;
+      letter-spacing: 0.15rem;
+      margin-right: 0.5rem;
+    }
+  }
+
+  &__info {
+    background-color: $primary-color;
+    margin-top: 3rem;
+    padding: 3rem 0;
+    display: flex;
+    color: #fff;
+    text-transform: capitalize;
+
+    &--topic {
+      flex: 1;
+
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+    }
+
+    &--icon-wrapper {
+      margin-left: 4.5rem;
+    }
+
+    &--icon {
+      height: 4rem;
+      width: 4rem;
+      fill: #fff;
+    }
+
+    &--text {
+      flex: 0 0 60%;
+    }
+
+    &--text h4 {
+      text-transform: inherit;
+    }
+
+    &--text p {
+      font-size: 1.6rem;
+    }
+
+    &--text a {
+      text-decoration: none;
+      cursor: pointer;
+      color: #fff;
+      font-size: 2rem;
+      font-family: $heading-fonts;
+    }
+  }
+}

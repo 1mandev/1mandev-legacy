@@ -32,7 +32,6 @@
   -webkit-animation: slideInDown 1s;
 }
 
-
 @keyframes slideInUp {
   0% {
     opacity: 0;
@@ -67,9 +66,7 @@
   -webkit-animation: slideInUp 1s;
 }
 
-
 @keyframes smallSlideDownUp {
-
   0% {
     transform: translateY(0.5rem);
     -webkit-transform: translateY(0.5rem);
@@ -100,9 +97,7 @@
   -webkit-animation: smallSlideDownUp 1s;
 }
 
-
 @keyframes smallSlideRightLeft {
-
   0% {
     transform: translateX(0.5rem);
     -webkit-transform: translateX(0.5rem);
@@ -132,7 +127,6 @@
   animation: smallSlideRightLeft 1s;
   -webkit-animation: smallSlideRightLeft 1s;
 }
-
 
 .md-anim-infinity {
   animation-iteration-count: infinite;

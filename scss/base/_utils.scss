@@ -1,19 +1,17 @@
 .content-box {
   width: 88%;
   margin: 0 auto;
-  
 }
 
 section {
   margin-top: 16rem;
   margin-bottom: 16rem;
 
-  .sec_iconimg{
+  .sec_iconimg {
     width: 4.8rem;
-
   }
 
-  .sec_iconimg path{
+  .sec_iconimg path {
     fill: $primary-color;
     fill-rule: evenodd;
   }
@@ -35,7 +33,7 @@ section {
     }
 
     &--text {
-      width: 70%;
+      max-width: 70rem;
       margin: auto;
     }
   }
