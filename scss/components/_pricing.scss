@@ -1,7 +1,7 @@
 .card {
   text-align: center;
   border-radius: 1rem;
-  border: 1px solid $secondary-color;
+  border: 2px solid $secondary-color;
   margin-top: 3rem;
   overflow: hidden;
 
@@ -23,6 +23,8 @@
   &__price-text {
     font-size: 1.4rem;
     text-transform: uppercase;
+    font-weight: bold;
+    color: darken($light-color, 40%);
   }
 
   &__price-value {
