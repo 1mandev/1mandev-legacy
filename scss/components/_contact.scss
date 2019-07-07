@@ -1,0 +1,154 @@
+.contact {
+  background-color: $light-color-1;
+  max-width: 110rem;
+  margin: 0 auto;
+  border-radius: 5px;
+  overflow: hidden;
+
+  &__form {
+    padding: 3.5rem 1rem;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__field {
+    display: flex;
+    padding-bottom: 3rem;
+
+    &--wrapper {
+      flex: 0 0 50%;
+      position: relative;
+    }
+
+    &--input {
+      display: block;
+      margin: 0 auto;
+      font-family: inherit;
+      color: inherit;
+      font-size: inherit;
+      letter-spacing: 0.15rem;
+      width: 90%;
+      border: 1px solid $dark-color;
+      padding: 2rem;
+      border-radius: 5px;
+    }
+
+    &--input:focus {
+      outline: none;
+    }
+
+    &::-webkit-input-placeholder {
+    }
+
+    &::-moz-placeholder {
+    }
+
+    &--select {
+      display: block;
+      margin: 0 auto;
+      font-family: inherit;
+      color: inherit;
+      font-size: inherit;
+      width: 90%;
+      border: 1px solid $dark-color;
+      padding: 2rem;
+      border-radius: 5px;
+      letter-spacing: 0.15rem;
+
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      appearance: none;
+    }
+
+    &--select::after {
+      content: "";
+      position: absolute;
+      background: url(../../assets/icon/chevron-small-down.svg);
+      background-repeat: no-repeat;
+      background-position: center center;
+      z-index: 1;
+      height: 1.6rem;
+      width: 1.6rem;
+      display: block;
+    }
+
+    &--select:focus {
+      outline: none;
+    }
+  }
+
+  &__text {
+    display: flex;
+
+    &--wrapper {
+      flex: 1;
+    }
+
+    &--area {
+      display: block;
+      margin: 0 auto;
+      width: 95%;
+      border: 1px solid $dark-color;
+      border-radius: 5px;
+      font-family: inherit;
+      color: inherit;
+      font-size: inherit;
+      padding: 2rem;
+      letter-spacing: 0.15rem;
+    }
+
+    &--area:focus {
+      outline: none;
+    }
+  }
+
+  &__submit {
+    margin: 0 auto;
+    margin-top: 4rem;
+  }
+}
+
+// contact source
+.source {
+  max-width: 110rem;
+  margin: 4rem auto 0 auto;
+  overflow: hidden;
+
+  display: flex;
+  justify-content: space-between;
+
+  &__item {
+    flex: 0 0 30%;
+
+    background-color: $light-color-1;
+    padding: 2rem 2rem;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+    &--icon {
+      height: 4rem;
+      width: 4rem;
+      fill: $dark-color-1;
+    }
+
+    &--info {
+      flex: 0 0 70%;
+    }
+
+    &--info p {
+      font-size: 1.8rem;
+      color: $dark-color-1;
+      text-transform: uppercase;
+    }
+
+    &--info h4 {
+      color: $primary-color;
+    }
+
+    &--info .small {
+      font-size: 1.6rem;
+    }
+  }
+}

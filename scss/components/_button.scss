@@ -14,15 +14,12 @@
   backface-visibility: hidden;
   -webkit-backface-visibility: hidden;
 
-
   &:hover {
     opacity: 0.9;
     box-shadow: none;
     text-decoration: none;
     outline: none;
   }
-
-  
 
   &--primary {
     background-color: $primary-color;
@@ -46,7 +43,7 @@
     color: $secondary-color;
   }
 
-  &--light-dark{
+  &--light-dark {
     background-color: $light-color;
     color: $dark-color;
   }

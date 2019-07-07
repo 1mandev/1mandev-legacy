@@ -4,14 +4,15 @@
 *::before {
   margin: 0;
   padding: 0;
-  box-sizing: initial; }
+  box-sizing: inherit; }
 
 ::selection {
   background-color: #383a3f;
   color: #f68657; }
 
 html {
-  font-size: 62.5%; }
+  font-size: 62.5%;
+  box-sizing: border-box; }
 
 body {
   font-family: "Gotham", Arial, Helvetica, sans-serif;
@@ -21,7 +22,12 @@ body {
   box-sizing: border-box;
   margin: 1rem; }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: "Exo", Arial, Helvetica, sans-serif;
   text-transform: uppercase; }
 
@@ -229,7 +235,7 @@ section {
     padding: 0.7rem 2.3rem; }
 
 .credential {
-  padding: 3rem; }
+  padding: 5rem; }
   .credential__list {
     display: flex;
     justify-content: space-around; }
@@ -258,6 +264,111 @@ section {
   .credential__text {
     flex: 1;
     padding-bottom: 3.2rem; }
+
+.contact {
+  background-color: #faf9f9;
+  max-width: 110rem;
+  margin: 0 auto;
+  border-radius: 5px;
+  overflow: hidden; }
+  .contact__form {
+    padding: 3.5rem 1rem;
+    display: flex;
+    flex-direction: column; }
+  .contact__field {
+    display: flex;
+    padding-bottom: 3rem; }
+    .contact__field--wrapper {
+      flex: 0 0 50%;
+      position: relative; }
+    .contact__field--input {
+      display: block;
+      margin: 0 auto;
+      font-family: inherit;
+      color: inherit;
+      font-size: inherit;
+      letter-spacing: 0.15rem;
+      width: 90%;
+      border: 1px solid #383a3f;
+      padding: 2rem;
+      border-radius: 5px; }
+    .contact__field--input:focus {
+      outline: none; }
+    .contact__field--select {
+      display: block;
+      margin: 0 auto;
+      font-family: inherit;
+      color: inherit;
+      font-size: inherit;
+      width: 90%;
+      border: 1px solid #383a3f;
+      padding: 2rem;
+      border-radius: 5px;
+      letter-spacing: 0.15rem;
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      appearance: none; }
+    .contact__field--select::after {
+      content: "";
+      position: absolute;
+      background: url(../../assets/icon/chevron-small-down.svg);
+      background-repeat: no-repeat;
+      background-position: center center;
+      z-index: 1;
+      height: 1.6rem;
+      width: 1.6rem;
+      display: block; }
+    .contact__field--select:focus {
+      outline: none; }
+  .contact__text {
+    display: flex; }
+    .contact__text--wrapper {
+      flex: 1; }
+    .contact__text--area {
+      display: block;
+      margin: 0 auto;
+      width: 95%;
+      border: 1px solid #383a3f;
+      border-radius: 5px;
+      font-family: inherit;
+      color: inherit;
+      font-size: inherit;
+      padding: 2rem;
+      letter-spacing: 0.15rem; }
+    .contact__text--area:focus {
+      outline: none; }
+  .contact__submit {
+    margin: 0 auto;
+    margin-top: 4rem; }
+
+.source {
+  max-width: 110rem;
+  margin: 4rem auto 0 auto;
+  overflow: hidden;
+  display: flex;
+  justify-content: space-between; }
+  .source__item {
+    flex: 0 0 30%;
+    background-color: #faf9f9;
+    padding: 2rem 2rem;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly; }
+    .source__item--icon {
+      height: 4rem;
+      width: 4rem;
+      fill: #999; }
+    .source__item--info {
+      flex: 0 0 70%; }
+    .source__item--info p {
+      font-size: 1.8rem;
+      color: #999;
+      text-transform: uppercase; }
+    .source__item--info h4 {
+      color: #f68657; }
+    .source__item--info .small {
+      font-size: 1.6rem; }
 
 .card {
   text-align: center;
@@ -431,7 +542,7 @@ section {
       font-weight: 500; }
 
 .row {
-  max-width: 114rem;
+  max-width: 120rem;
   margin: 0 auto;
   content: "";
   display: table;
