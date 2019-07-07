@@ -196,6 +196,34 @@
 .section-market-place {
   background-color: $light-color-1;
   padding: 5rem 0 5rem 0;
+
+  .marketplace {
+    display: flex;
+    justify-content: space-around;
+    max-width: 72rem;
+    margin: 4rem auto;
+    
+    a {
+      display: block;
+      height: 10rem;
+    }
+
+    &__box {
+      width: 30rem;
+      height: 10rem;
+      border-radius: 1rem;
+      background-color: $light-color;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: contain;
+      border: 2px solid darken($light-color, 10%);
+      transition: border 0.3s ease-in-out;
+
+      &:hover {
+        border: 2px solid $primary-color;
+      }
+    }
+  }
 }
 
 // Testimonials

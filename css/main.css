@@ -164,6 +164,9 @@ h6 {
   width: 88%;
   margin: 0 auto; }
 
+#card-special {
+  border: 2px solid #f68657 !important; }
+
 section {
   margin-top: 16rem;
   margin-bottom: 16rem; }
@@ -242,13 +245,16 @@ section {
     .credential__list:last-child {
       padding-top: 3rem; }
   .credential__item {
-    border-radius: 5px;
-    transition: all 0.2s;
+    border-radius: 1rem;
+    transition: all 0.3s ease-in-out;
     flex: 0 0 30%;
     display: flex;
-    align-items: flex-end; }
+    align-items: flex-end;
+    border: 2px solid #d8d8d8; }
     .credential__item:hover {
       border: 2px solid #f68657; }
+      .credential__item:hover .credential__elem--number {
+        color: #f68657; }
   .credential__elem {
     padding: 1rem 2rem;
     flex: 0 1 30%; }
@@ -256,14 +262,19 @@ section {
       font-family: "Exo", Arial, Helvetica, sans-serif;
       font-size: 4rem;
       padding-bottom: 2rem;
-      color: #f68657; }
+      color: #d8d8d8; }
     .credential__elem--icon {
       height: 10rem;
       width: 10rem;
       fill: #f68657; }
   .credential__text {
     flex: 1;
-    padding-bottom: 3.2rem; }
+    padding-bottom: 3.2rem;
+    font-size: 1.6rem;
+    font-weight: bold;
+    text-transform: uppercase; }
+    .credential__text p {
+      color: #81858f; }
 
 .contact {
   background-color: #faf9f9;
@@ -373,7 +384,7 @@ section {
 .card {
   text-align: center;
   border-radius: 1rem;
-  border: 1px solid #f6b352;
+  border: 2px solid #f6b352;
   margin-top: 3rem;
   overflow: hidden; }
   .card__heading {
@@ -387,7 +398,9 @@ section {
     margin-top: 2.5rem; }
   .card__price-text {
     font-size: 1.4rem;
-    text-transform: uppercase; }
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #989898; }
   .card__price-value--dollar {
     color: #f6b352;
     font-weight: 600;
@@ -434,14 +447,16 @@ section {
   .portfolio__photo {
     width: 100%;
     max-height: 48rem;
-    object-fit: contain;
-    object-position: 0 0; }
+    object-fit: cover;
+    object-position: 0 0;
+    box-shadow: 3px 3px 9px #d8d8d8; }
   .portfolio__description {
     flex: 1;
     padding-right: 6rem;
-    padding-left: 1.5rem; }
+    padding-left: 3rem; }
     .portfolio__description--main {
-      padding: 4rem 0 4rem; }
+      padding: 4rem 0 4rem;
+      margin-bottom: 4rem; }
     .portfolio__description--main a {
       text-decoration: none;
       cursor: pointer;
@@ -464,7 +479,7 @@ section {
       width: 6rem;
       border-radius: 50%;
       text-transform: uppercase;
-      border: 1px solid #383a3f;
+      border: 2px solid #81858f;
       color: #f68657;
       font-weight: bold;
       letter-spacing: 0.15rem;
@@ -721,6 +736,26 @@ section {
 .section-market-place {
   background-color: #faf9f9;
   padding: 5rem 0 5rem 0; }
+  .section-market-place .marketplace {
+    display: flex;
+    justify-content: space-around;
+    max-width: 72rem;
+    margin: 4rem auto; }
+    .section-market-place .marketplace a {
+      display: block;
+      height: 10rem; }
+    .section-market-place .marketplace__box {
+      width: 30rem;
+      height: 10rem;
+      border-radius: 1rem;
+      background-color: #fefefe;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: contain;
+      border: 2px solid #e5e5e5;
+      transition: border 0.3s ease-in-out; }
+      .section-market-place .marketplace__box:hover {
+        border: 2px solid #f68657; }
 
 .section-testimonials {
   background-color: #f6b352;

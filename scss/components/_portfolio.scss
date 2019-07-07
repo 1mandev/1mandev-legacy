@@ -25,17 +25,19 @@
   &__photo {
     width: 100%;
     max-height: 48rem;
-    object-fit: contain;
+    object-fit: cover;
     object-position: 0 0;
+    box-shadow: 3px 3px 9px darken($light-color, 15%);
   }
 
   &__description {
     flex: 1;
     padding-right: 6rem;
-    padding-left: 1.5rem;
+    padding-left: 3rem;
 
     &--main {
       padding: 4rem 0 4rem;
+      margin-bottom: 4rem;
     }
 
     &--main a {
@@ -66,7 +68,7 @@
       width: 6rem;
       border-radius: 50%;
       text-transform: uppercase;
-      border: 1px solid $dark-color;
+      border: 2px solid lighten($dark-color, 30%);
       color: $primary-color;
       font-weight: bold;
       letter-spacing: 0.15rem;
@@ -84,7 +86,6 @@
 
     &--topic {
       flex: 1;
-
       display: flex;
       justify-content: space-around;
       align-items: center;
