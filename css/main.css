@@ -609,6 +609,74 @@ section {
     -ms-border-radius: 80%;
     -o-border-radius: 80%; }
 
+.footer {
+  margin-top: 4rem; }
+  .footer__box {
+    background-color: #383a3f;
+    color: #fefefe;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 8rem 4rem; }
+    .footer__box--about {
+      flex: 2;
+      display: flex;
+      align-self: center; }
+      .footer__box--about .fabout__image img {
+        width: 12rem; }
+      .footer__box--about .fabout__info {
+        padding: 0 3rem; }
+        .footer__box--about .fabout__info--title {
+          color: #f68657;
+          margin-bottom: 1rem; }
+        .footer__box--about .fabout__info--details {
+          text-align: justify; }
+    .footer__box--menu-1 {
+      flex: 1;
+      align-self: center;
+      padding-left: 4rem; }
+    .footer__box--menu-2 {
+      flex: 1;
+      align-self: center; }
+    .footer__box .fmenu li {
+      padding: 1rem;
+      list-style: none; }
+    .footer__box .fmenu a {
+      text-decoration: none;
+      color: #fefefe;
+      transition: all 0.1s ease-in-out; }
+    .footer__box .fmenu a:hover {
+      text-decoration: underline;
+      color: #f68657; }
+    .footer__box--social {
+      flex: 1;
+      align-self: center; }
+      .footer__box--social .fsocial {
+        display: flex;
+        justify-content: space-around; }
+        .footer__box--social .fsocial li {
+          width: 4rem;
+          height: 4rem;
+          list-style: none;
+          background-color: #f68657;
+          text-align: center;
+          border-radius: 50%;
+          transition: all 0.2s ease-in-out; }
+        .footer__box--social .fsocial a {
+          color: #fefefe;
+          font-size: 2.4rem; }
+        .footer__box--social .fsocial li:hover {
+          background-color: #f6b352; }
+  .footer__copyright {
+    background-color: #f68657;
+    color: #fefefe;
+    padding: 1.6rem 0; }
+    .footer__copyright p {
+      text-align: center; }
+      .footer__copyright p a {
+        color: #383a3f; }
+      .footer__copyright p a:hover {
+        color: #fefefe; }
+
 .hero {
   height: 100vh;
   margin: auto;
