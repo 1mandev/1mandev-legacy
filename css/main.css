@@ -3,16 +3,14 @@
 *::after,
 *::before {
   margin: 0;
-  padding: 0;
-  box-sizing: inherit; }
+  padding: 0; }
 
 ::selection {
   background-color: #383a3f;
   color: #f68657; }
 
 html {
-  font-size: 62.5%;
-  box-sizing: border-box; }
+  font-size: 62.5%; }
 
 body {
   font-family: "Gotham", Arial, Helvetica, sans-serif;
@@ -298,13 +296,14 @@ section {
       font-family: inherit;
       color: inherit;
       font-size: inherit;
-      letter-spacing: 0.15rem;
       width: 90%;
-      border: 1px solid #383a3f;
+      border: 2px solid #b2b2b2;
       padding: 2rem;
-      border-radius: 5px; }
+      border-radius: 5px;
+      box-sizing: border-box; }
     .contact__field--input:focus {
-      outline: none; }
+      outline: none;
+      border-color: #f68657; }
     .contact__field--select {
       display: block;
       margin: 0 auto;
@@ -312,25 +311,23 @@ section {
       color: inherit;
       font-size: inherit;
       width: 90%;
-      border: 1px solid #383a3f;
+      border: 2px solid #b2b2b2;
       padding: 2rem;
       border-radius: 5px;
-      letter-spacing: 0.15rem;
       -webkit-appearance: none;
       -moz-appearance: none;
-      appearance: none; }
+      appearance: none;
+      background: url(../../assets/icon/chevron-small-down.svg) white no-repeat calc(100% - 1.5rem) !important; }
     .contact__field--select::after {
       content: "";
       position: absolute;
-      background: url(../../assets/icon/chevron-small-down.svg);
-      background-repeat: no-repeat;
-      background-position: center center;
       z-index: 1;
       height: 1.6rem;
       width: 1.6rem;
       display: block; }
     .contact__field--select:focus {
-      outline: none; }
+      outline: none;
+      border-color: #f68657; }
   .contact__text {
     display: flex; }
     .contact__text--wrapper {
@@ -338,16 +335,18 @@ section {
     .contact__text--area {
       display: block;
       margin: 0 auto;
+      box-sizing: border-box;
       width: 95%;
-      border: 1px solid #383a3f;
+      border: 2px solid #b2b2b2;
       border-radius: 5px;
       font-family: inherit;
       color: inherit;
       font-size: inherit;
       padding: 2rem;
-      letter-spacing: 0.15rem; }
+      resize: none; }
     .contact__text--area:focus {
-      outline: none; }
+      outline: none;
+      border-color: #f68657; }
   .contact__submit {
     margin: 0 auto;
     margin-top: 4rem; }
@@ -359,13 +358,17 @@ section {
   display: flex;
   justify-content: space-between; }
   .source__item {
+    text-decoration: none;
+    border: 2px solid #f1f1f1;
     flex: 0 0 30%;
+    box-sizing: border-box;
     background-color: #faf9f9;
     padding: 2rem 2rem;
     border-radius: 5px;
     display: flex;
     align-items: center;
-    justify-content: space-evenly; }
+    justify-content: space-evenly;
+    transition: all .3s ease-in-out; }
     .source__item--icon {
       height: 4rem;
       width: 4rem;
@@ -380,6 +383,8 @@ section {
       color: #f68657; }
     .source__item--info .small {
       font-size: 1.6rem; }
+    .source__item:hover {
+      border-color: #f68657; }
 
 .card {
   text-align: center;
@@ -667,7 +672,7 @@ section {
 .services__box {
   margin-top: 5rem;
   background-image: linear-gradient(to right bottom, rgba(246, 134, 87, 0.95), rgba(246, 179, 82, 0.95)), url("../assets/img/hero.png");
-  padding: 6.4rem 1.6rem; }
+  padding: 8rem 1.6rem; }
   .services__box--content {
     background: rgba(254, 254, 254, 0.8);
     padding: 2rem 3.2rem;
