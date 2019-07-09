@@ -1,4 +1,4 @@
-.contact {
+.wpcf7 {
   background-color: $light-color-1;
   max-width: 110rem;
   margin: 0 auto;
@@ -6,13 +6,15 @@
   
   overflow: hidden;
 
-  &__form {
+  &-form {
     padding: 3.5rem 1rem;
     display: flex;
     flex-direction: column;
     
   }
+}
 
+.contact{
   &__field {
     display: flex;
     padding-bottom: 3rem;
@@ -42,12 +44,6 @@
       border-color: $primary-color;
     }
 
-    &::-webkit-input-placeholder {
-    }
-
-    &::-moz-placeholder {
-    }
-
     &--select {
       display: block;
       margin: 0 auto;
@@ -67,10 +63,6 @@
     &--select::after {
       content: "";
       position: absolute;
-      
-      // background: 
-      // background-repeat: no-repeat;
-      // background-position: center center;
       z-index: 1;
       height: 1.6rem;
       width: 1.6rem;
@@ -113,8 +105,17 @@
   &__submit {
     margin: 0 auto;
     margin-top: 4rem;
+    input[type="submit"]{
+      border: none;
+      outline: none;
+      cursor: pointer;
+      font-family: $text-fonts;
+      font-size: 1.6rem;
+      padding: 1.2rem 4.8rem;
+    }
   }
 }
+
 
 // contact source
 .source {

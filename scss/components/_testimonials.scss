@@ -9,7 +9,9 @@
   position: relative;
   z-index: 1;
 
+
   &::after {
+    
     content: "\201D";
     position: absolute;
     top: 0;
