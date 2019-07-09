@@ -1,3 +1,16 @@
+// aos
+AOS.init();
+
+// Navigation
+const nav = document.querySelector(".nav");
+const toggleNav = document.querySelector("#toggle-navigation");
+const navigation = document.querySelector(".navigation");
+
+toggleNav.addEventListener("click", () => {
+  nav.classList.toggle("navigation-closed");
+  navigation.classList.toggle("navigation-open");
+});
+
 // Testimonial carousal
 var elem = document.querySelector(".testimonial-carousel");
 var flkty = new Flickity(elem, {

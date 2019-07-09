@@ -14,21 +14,45 @@
     crossorigin="anonymous">
   <!-- ========== Main Stylesheet ========== -->
   <link rel="stylesheet" href="./css/flickity.min.css">
+  <link rel="stylesheet" href="./css/aos.css" />
   <link rel="stylesheet" href="css/main.css">
 
 </head>
 
 <body>
   <header class="nav">
-    <nav>
+    <div class="navigation">
 
-      <ul class="">
+      <a href="#" class="nav__menu-bar--icon"><i class="fa fa-bars"></i></a>
+      <!-- <input type="checkbox" id="nav-toggle" class="navigation__checkbox">
+      <label for="nav-toggle" class="navigation__button">
+          <span class="navigation__icon">&nbsp;</span>
+      </label> -->
 
-      </ul>
+      <div class="navigation__background">&nbsp;</div>
+
+      <nav class="navigation__nav">
+          <ul class="navigation__list">
+              <li class="navigation__item">
+                  <a href="#" class="navigation__link"><span>01</span>About Natours</a>
+              </li>
+              <li class="navigation__item">
+                  <a href="#" class="navigation__link"><span>02</span>Your benifits</a>
+              </li>
+              <li class="navigation__item">
+                  <a href="#" class="navigation__link"><span>03</span>Popular tours</a>
+              </li>
+              <li class="navigation__item">
+                  <a href="#" class="navigation__link"><span>04</span>stories</a>
+              </li>
+              <li class="navigation__item">
+                  <a href="#" class="navigation__link"><span>05</span>Book now</a>
+              </li>
+          </ul>
+      </nav>
+  </div>
 
 
-
-    </nav>
 
     <div class="nav__menu-bar">
       <a href="#" class="md__btn md__btn--primary">Client Area</a>
@@ -45,6 +69,7 @@
           <img src="assets/img/logo-white.png" alt="1ManDev Site Logo">
         </a>
       </h1>
+
       <div class="hero__box">
         <div class="md-anim-slideInUp md-anim-easeInOut">
           <h2 class="hero__box--tagline">Battle Proven Developers at Service</h2>
@@ -936,6 +961,8 @@
   <!-- ========== jQuery ========== -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="./js/flickity.pkgd.min.js"></script>
+  <script src="./js/aos.js"></script>
+
   <!-- ========== Main Script ========== -->
   <script src="js/main.js"></script>
 
