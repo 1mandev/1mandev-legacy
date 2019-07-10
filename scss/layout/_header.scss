@@ -1,14 +1,13 @@
-.nav{
-  
-  &__menu-bar{
+.nav {
+  &__menu-bar {
     position: absolute;
     top: 5rem;
     right: 10rem;
-    a:first-of-type{
+    a:first-of-type {
       margin-right: 1.6rem;
     }
 
-    &--icon{
+    &--icon {
       position: fixed;
       top: 3rem;
       right: 2rem;
@@ -24,6 +23,6 @@
       -moz-border-radius: 80%;
       -ms-border-radius: 80%;
       -o-border-radius: 80%;
-}
+    }
   }
 }

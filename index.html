@@ -20,20 +20,25 @@
 
 <body>
   <header class="nav">
-    <nav>
+    <div class="navigation">
+      <div class="navigation__button">
+        <button class="navigation__toggle"></button>
+      </div>
 
-      <ul class="">
-
-      </ul>
-
-
-
-    </nav>
+      <nav>
+        <ul class="menu">
+          <li data-text="Home">Home</li>
+          <li data-text="Projects">Projects</li>
+          <li data-text="About">About</li>
+          <li data-text="Contact">Contact</li>
+        </ul>
+      </nav>
+    </div>
 
     <div class="nav__menu-bar">
       <a href="#" class="md__btn md__btn--primary">Client Area</a>
       <a href="get-started.html" class="md__btn md__btn--secondary">Get Started</a>
-       
+
     </div>
   </header>
 
@@ -45,6 +50,7 @@
           <img src="assets/img/logo-white.png" alt="1ManDev Site Logo">
         </a>
       </h1>
+
       <div class="hero__box">
         <div class="md-anim-slideInUp md-anim-easeInOut">
           <h2 class="hero__box--tagline">Battle Proven Developers at Service</h2>
@@ -1016,7 +1022,7 @@
               <use xlink:href="./assets/icon/sprite.svg#icon-ionicons_svg_md-mail"></use>
             </svg>
           </div>
-          
+
           <div class="source__item--info">
             <p>email us</p>
             <h4 class="small">contact@1mandev.com</h4>
@@ -1102,6 +1108,7 @@
   <!-- ========== jQuery ========== -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="./js/flickity.min.js"></script>
+
   <!-- ========== Main Script ========== -->
   <script src="js/main.js"></script>
 

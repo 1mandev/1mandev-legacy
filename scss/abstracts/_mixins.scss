@@ -5,33 +5,42 @@
 }
 
 // Media Query Manager
+/*
+  0px - 600px -> Phone
+  600px - 900px -> Tablet Portrait
+  900px - 1200px -> Tablet Landscape
+  1200px - 1800px -> Normal(What i designed after making it responsive)
+  1800px+ - -> Big Desktop
+
+  $breakpoint argument choices ->
+  - phone
+  - tab-port
+  - tab-land
+  - big-desktop
+
+  Order: base + typography > general layout( header, footer ) + grid > page layout > components
+*/
+
 @mixin respond($breakpoint) {
-  @if $breakpoint == extra-small {
+  @if $breakpoint == phone {
     @media only screen and (max-width: 37.5em) {
       @content;
     }
   } // 600px
-  
 
-  @if $breakpoint == small {
-    @media only screen and (max-width: 48em) {
+  @if $breakpoint == tab-port {
+    @media only screen and (max-width: 56.25em) {
       @content;
     }
-  } // 768
+  } // 900px
 
-  @if $breakpoint == medium {
+  @if $breakpoint == tab-land {
     @media only screen and (max-width: 75em) {
       @content;
     }
   } // 1200px
 
-  @if $breakpoint == large {
-    @media only screen and (min-width: 112.5em) {
-      @content;
-    }
-  } // 1800px
-
-  @if $breakpoint == extra-large {
+  @if $breakpoint == big-desktop {
     @media only screen and (min-width: 112.5em) {
       @content;
     }
