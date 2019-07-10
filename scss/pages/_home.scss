@@ -114,12 +114,12 @@
         rgba($primary-color, 0.95),
         rgba($secondary-color, 0.95)
       ),
-      url("../assets/img/hero.png");
-    padding: 8rem 1.6rem;
+      url("../assets/img/services.jpg");
+    padding: 10rem 1.6rem;
 
     &--content {
       background: rgba($light-color, 0.8);
-      padding: 2rem 3.2rem;
+      padding: 4rem 3.2rem;
       height: 35rem;
       box-shadow: 0.1rem 0.1rem 0.5rem rgba($dark-color, 0.25);
       text-align: center;
@@ -137,6 +137,9 @@
 
     &--content:hover {
       cursor: default;
+      backface-visibility: hidden;
+      -webkit-backface-visibility: hidden;
+      -moz-backface-visibility: hidden;
       transform: translateY(-1rem) scale(1.05);
       -webkit-transform: translateY(-1rem) scale(1.05);
       -moz-transform: translateY(-1rem) scale(1.05);
@@ -144,9 +147,9 @@
       -o-transform: translateY(-1rem) scale(1.05);
     }
 
-    &--icon {
-      width: 2rem;
-      padding-bottom: 1.6rem;
+    &--iconimg {
+      width: 5.6rem;
+      padding-bottom: 2rem;
     }
 
     &--intro {

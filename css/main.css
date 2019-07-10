@@ -1023,11 +1023,11 @@ section {
 
 .services__box {
   margin-top: 5rem;
-  background-image: linear-gradient(to right bottom, rgba(246, 134, 87, 0.95), rgba(246, 179, 82, 0.95)), url("../assets/img/hero.png");
-  padding: 8rem 1.6rem; }
+  background-image: linear-gradient(to right bottom, rgba(246, 134, 87, 0.95), rgba(246, 179, 82, 0.95)), url("../assets/img/services.jpg");
+  padding: 10rem 1.6rem; }
   .services__box--content {
     background: rgba(254, 254, 254, 0.8);
-    padding: 2rem 3.2rem;
+    padding: 4rem 3.2rem;
     height: 35rem;
     box-shadow: 0.1rem 0.1rem 0.5rem rgba(56, 58, 63, 0.25);
     text-align: center;
@@ -1043,14 +1043,17 @@ section {
     -o-transition: all 0.3s ease-in-out; }
   .services__box--content:hover {
     cursor: default;
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
     transform: translateY(-1rem) scale(1.05);
     -webkit-transform: translateY(-1rem) scale(1.05);
     -moz-transform: translateY(-1rem) scale(1.05);
     -ms-transform: translateY(-1rem) scale(1.05);
     -o-transform: translateY(-1rem) scale(1.05); }
-  .services__box--icon {
-    width: 2rem;
-    padding-bottom: 1.6rem; }
+  .services__box--iconimg {
+    width: 5.6rem;
+    padding-bottom: 2rem; }
   .services__box--intro {
     font-size: 2rem;
     color: #f68657;
