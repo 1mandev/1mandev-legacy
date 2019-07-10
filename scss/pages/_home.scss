@@ -50,7 +50,7 @@
 
     &--intro {
       padding: 2rem 0;
-      font-size: 1.7rem;
+      font-size: 1.5rem;
       width: 60%;
 
       @include respond(tab-port) {
@@ -60,8 +60,6 @@
 
     &--c2a {
       padding-top: 1rem;
-      backface-visibility: hidden;
-      -webkit-backface-visibility: hidden;
 
       & a {
         margin-right: 1rem;

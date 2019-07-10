@@ -1,3 +1,4 @@
+</main>
 <footer class="footer">
   <div class="footer__box">
     <div class="footer__box--about">

@@ -1,4 +1,4 @@
-<section class="section-portfolio">
+<section class="section-portfolio" id="portfolio">
   <div class="section__box">
     <h2 class="section__box--intro">portfolio &mdash; made with love</h2>
     <i class="section__box--icon md-anim-smallSlideDownUp md-anim-infinity md-anim-delay md-anim-easeInOut fa fa-arrow-circle-down"></i>

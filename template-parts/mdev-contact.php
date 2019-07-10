@@ -1,4 +1,4 @@
-<section class="section-contact">
+<section class="section-contact" id="contact-us">
   <div class="section__box">
     <h2 class="section__box--intro">Contact us &mdash; Let's Talk About The Project</h2>
     <i class="section__box--icon md-anim-smallSlideDownUp md-anim-infinity md-anim-delay md-anim-easeInOut fa fa-arrow-circle-down"></i>

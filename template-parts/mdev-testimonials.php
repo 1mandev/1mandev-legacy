@@ -1,4 +1,4 @@
-<section class="section-testimonials">
+<section class="section-testimonials" id="testimonials">
   <div class="section__box">
     <h2 class="section__box--intro">Testimonials &mdash; What People say</h2>
     <i class="section__box--icon md-anim-smallSlideDownUp md-anim-infinity md-anim-delay md-anim-easeInOut fa fa-arrow-circle-down"></i>
