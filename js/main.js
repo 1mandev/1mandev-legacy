@@ -19,9 +19,18 @@ var flkty = new Flickity(portfolio, {
 });
 
 // nav
-const button = document.querySelector(".navigation__toggle");
-const body = document.querySelector("body");
+const button = document.querySelector(".navigation__toggle"),
+  body = document.querySelector("body"),
+  navlist = document.querySelectorAll("nav ul li"),
+  navigation = document.querySelector(".nav nav");
 
 button.addEventListener("click", () => {
   body.classList.toggle("open");
+  navigation.style.display = "block";
+});
+
+navlist.forEach(nav => {
+  nav.addEventListener("click", () => {
+    body.classList.remove("open");
+  });
 });
