@@ -42,7 +42,6 @@
 
 <body>
 
-<h1></h1>
   <header class="nav">
     <div class="navigation">
       <div class="navigation__button">
@@ -51,12 +50,12 @@
 
       <nav>
         <ul class="menu">
-          <li data-text="Home"><a href="<?php echo site_url('/') ?>">Home</a></li>
-          <li data-text="Services"><a href="<?php echo site_url('#services') ?>">Services</a></li>
-          <li data-text="Pricing"><a href="<?php echo site_url('#pricing') ?>">Pricing</a></li>
-          <li data-text="Why Us"><a href="<?php echo site_url('#why-us') ?>">Why Us</a></li>
-          <li data-text="Portfolio"><a href="<?php echo site_url('#portfolio') ?>">Portfolio</a></li>
-          <li data-text="Contact Us"><a href="<?php echo site_url('#contact-us') ?>">Contact Us</a></li>
+          <li><a href="<?php echo site_url('/') ?>"  data-text="Home">Home</a></li>
+          <li><a href="<?php echo site_url('#services') ?>" data-text="Services">Services</a></li>
+          <li><a href="<?php echo site_url('#pricing') ?>" data-text="Pricing">Pricing</a></li>
+          <li><a href="<?php echo site_url('#why-us') ?>" data-text="Why Us">Why Us</a></li>
+          <li><a href="<?php echo site_url('#portfolio') ?>" data-text="Portfolio">Portfolio</a></li>
+          <li><a href="<?php echo site_url('#contact-us') ?>" data-text="Contact Us">Contact Us</a></li>
         </ul>
       </nav>
     </div>
