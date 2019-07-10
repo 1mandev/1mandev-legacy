@@ -235,11 +235,11 @@ section {
   background-color: transparent;
   z-index: 2;
   border: none;
-  width: 3.6rem;
-  height: 3rem;
+  width: 2.8rem;
+  height: 2rem;
   outline: none;
   position: relative;
-  margin-top: 2rem;
+  margin-top: 2.5rem;
   transition: opacity 0.2s ease-out; }
   .navigation__toggle::before {
     content: "";
@@ -258,10 +258,10 @@ section {
     content: "×";
     color: #f68657;
     position: absolute;
-    top: 16px;
-    left: -4px;
+    top: 1.2rem;
+    left: -0.3rem;
     font-family: Arial, sans-serif;
-    font-size: 76px;
+    font-size: 6rem;
     line-height: 0;
     transition: opacity 0.4s ease-out; }
   .navigation__toggle:active {
@@ -302,7 +302,7 @@ section {
     bottom: 0;
     left: 0;
     margin: auto;
-    background: rgba(123, 156, 121, 0.98);
+    background: rgba(246, 134, 87, 0.98);
     width: 100%;
     height: 0;
     padding-bottom: 100%;
