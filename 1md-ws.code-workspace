@@ -7,5 +7,7 @@
 			"path": "G:\\Localhost\\PHPDev\\1mandev\\wp-content\\mu-plugins"
 		}
 	],
-	"settings": {}
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "theme1mandev"
+	}
 }
