@@ -7,7 +7,7 @@
       </div>
       <div class="fabout__info">
         <h3 class="fabout__info--title">1MANDEV.COM</h3>
-        <p class="fabout__info--details">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam magnam qui, facilis praesentium sed tempora quaerat veniam? Architecto pariatur accusantium unde dicta obcaecati. Possimus, laudantium omnis debitis molestias porro quas!</p>
+        <p class="fabout__info--details">Building websites for your audiences is not just about ensuring your online presence, it's about giving users the best experience with it. At 1ManDev, we believe in delivering the best customer value and experience for you and your audiences through building user-friendly, well crafted and beautifully designed website for your niche.</p>
       </div>
     </div>
     <div class="footer__box--menu-1">

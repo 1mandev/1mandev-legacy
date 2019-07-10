@@ -63,7 +63,6 @@
     <div class="nav__menu-bar">
       <a href="#" class="md__btn md__btn--primary">Client Area</a>
       <a href="get-started.html" class="md__btn md__btn--secondary">Get Started</a>
-
     </div>
   </header>
 

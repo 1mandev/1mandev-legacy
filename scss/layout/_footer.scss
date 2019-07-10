@@ -1,73 +1,89 @@
-.footer{
+.footer {
   margin-top: 4rem;
 
-  &__box{
+  &__box {
     background-color: $dark-color;
     color: $light-color;
     display: flex;
     justify-content: space-evenly;
     padding: 8rem 4rem;
 
-    &--about{
+    
+
+    &--about {
       flex: 2;
       display: flex;
       align-self: center;
 
-      .fabout__image img{
+
+
+      .fabout__image img {
         width: 12rem;
       }
 
-      .fabout__info{
+      .fabout__info {
         padding: 0 3rem;
 
-        &--title{
+        &--title {
           color: $primary-color;
           margin-bottom: 1rem;
         }
 
-        &--details{
+        &--details {
           text-align: justify;
+        }
+      }
+
+      @include respond(tab-land){
+        flex-direction: column;
+        .fabout__info {
+          padding: 0;
         }
       }
     }
 
-    &--menu-1{
+    &--menu-1 {
       flex: 1;
       align-self: center;
-      padding-left:  4rem;
+      padding-left: 4rem; 
     }
 
-    &--menu-2{
+    &--menu-2 {
       flex: 1;
       align-self: center;
     }
 
-    .fmenu{
-      li{
+    .fmenu {
+      li {
         padding: 1rem;
         list-style: none;
       }
 
-      a{
+      a {
         text-decoration: none;
         color: $light-color;
-        transition: all 0.1s ease-in-out; 
+        transition: all 0.1s ease-in-out;
       }
 
-      a:hover{
+      a:hover {
         text-decoration: underline;
         color: $primary-color;
       }
     }
 
-    &--social{
+    &--social {
       flex: 1;
       align-self: center;
 
-      .fsocial{
+      .fsocial {
         display: flex;
         justify-content: space-around;
-        li{
+
+        @include respond(tab-land){
+          justify-content: space-evenly;
+        }
+
+        li {
           width: 4rem;
           height: 4rem;
           list-style: none;
@@ -77,36 +93,51 @@
           transition: all 0.2s ease-in-out;
         }
 
-        a{
+        a {
           color: $light-color;
           font-size: 2.4rem;
-          
         }
 
-
-        li:hover{
+        li:hover {
           background-color: $secondary-color;
         }
       }
+    }
 
+    @include respond(phone){
+      display: block;
+      text-align: center;
+      &--menu-1 {
+        display: none;
+      }
+
+      .fmenu{
+        display: inline-flex;
+        justify-content: space-evenly;
+        padding: 2rem 0;
+      }
     }
   }
 
-  &__copyright{
-
+  &__copyright {
     background-color: $primary-color;
     color: $light-color;
     padding: 1.6rem 0;
-    p{
+    p {
       text-align: center;
 
-      a{
+      a {
         color: $dark-color;
       }
-      a:hover{
+      a:hover {
         color: $light-color;
       }
     }
 
+    
+
   }
+
+  
+  
 }
