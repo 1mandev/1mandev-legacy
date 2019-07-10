@@ -1,7 +1,7 @@
 .wpcf7 {
   background-color: $light-color-1;
   max-width: 110rem;
-  margin: 0 auto;
+  margin: 0 auto!important;
   border-radius: 5px;
   
   overflow: hidden;
@@ -12,6 +12,27 @@
     flex-direction: column;
     
   }
+
+  &-not-valid-tip{
+    padding: 2rem 3rem;
+  }
+
+  &-response-output{
+    text-align: center;
+    margin: 2rem 3rem !important;
+    padding: 2rem !important;
+    border-radius: 0.5rem;
+    background-color: $light-color;
+  }
+
+  &-validation-errors{
+    border-color: $secondary-color!important;
+  }
+
+  &-mail-sent-ok{
+    border-color: $primary-color!important;
+  }
+
 }
 
 .contact{
