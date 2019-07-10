@@ -326,7 +326,8 @@ section {
       font-size: 28px; }
       .navigation nav ul li a {
         color: #fefefe;
-        text-decoration: none; }
+        text-decoration: none;
+        z-index: 999; }
   .navigation nav ul.menu {
     position: fixed;
     top: 50%;
@@ -357,7 +358,7 @@ section {
         width: 0;
         overflow: hidden;
         transition: width 0.14s ease-out; }
-      .navigation nav ul.menu li::after {
+      .navigation nav ul.menu li a::after {
         opacity: 0;
         content: attr(data-text);
         position: absolute;
@@ -377,7 +378,7 @@ section {
         left: 0;
         right: auto;
         width: 100%; }
-      .navigation nav ul.menu li:hover::after {
+      .navigation nav ul.menu li a:hover::after {
         opacity: 1;
         padding: 0 20px;
         -webkit-transform: translate(0px, 6px);
