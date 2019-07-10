@@ -14,7 +14,6 @@
     crossorigin="anonymous">
   <!-- ========== Main Stylesheet ========== -->
   <link rel="stylesheet" href="./css/flickity.min.css">
-  <link rel="stylesheet" href="./css/aos.css" />
   <link rel="stylesheet" href="css/main.css">
 
 </head>
@@ -22,42 +21,24 @@
 <body>
   <header class="nav">
     <div class="navigation">
+      <div class="navigation__button">
+        <button class="navigation__toggle"></button>
+      </div>
 
-      <a href="#" class="nav__menu-bar--icon"><i class="fa fa-bars"></i></a>
-      <!-- <input type="checkbox" id="nav-toggle" class="navigation__checkbox">
-      <label for="nav-toggle" class="navigation__button">
-          <span class="navigation__icon">&nbsp;</span>
-      </label> -->
-
-      <div class="navigation__background">&nbsp;</div>
-
-      <nav class="navigation__nav">
-          <ul class="navigation__list">
-              <li class="navigation__item">
-                  <a href="#" class="navigation__link"><span>01</span>About Natours</a>
-              </li>
-              <li class="navigation__item">
-                  <a href="#" class="navigation__link"><span>02</span>Your benifits</a>
-              </li>
-              <li class="navigation__item">
-                  <a href="#" class="navigation__link"><span>03</span>Popular tours</a>
-              </li>
-              <li class="navigation__item">
-                  <a href="#" class="navigation__link"><span>04</span>stories</a>
-              </li>
-              <li class="navigation__item">
-                  <a href="#" class="navigation__link"><span>05</span>Book now</a>
-              </li>
-          </ul>
+      <nav>
+        <ul class="menu">
+          <li data-text="Home">Home</li>
+          <li data-text="Projects">Projects</li>
+          <li data-text="About">About</li>
+          <li data-text="Contact">Contact</li>
+        </ul>
       </nav>
-  </div>
-
-
+    </div>
 
     <div class="nav__menu-bar">
       <a href="#" class="md__btn md__btn--primary">Client Area</a>
       <a href="get-started.html" class="md__btn md__btn--secondary">Get Started</a>
-      <a href="#" class="nav__menu-bar--icon"><i class="fa fa-bars"></i></a>
+
     </div>
   </header>
 
@@ -865,14 +846,14 @@
 
     <section class="section-contact">
       <div class="section__box">
-        <h2 class="section__box--intro">Testimonials &mdash; What People say</h2>
+        <h2 class="section__box--intro">Contact us &mdash; Let's Talk About The Project</h2>
         <i class="section__box--icon md-anim-smallSlideDownUp md-anim-infinity md-anim-delay md-anim-easeInOut fa fa-arrow-circle-down"></i>
         <p class="section__box--text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem tempora tempore
           quos maiores totam. Possimus laboriosam quo, quis fugiat omnis dolore tempora accusantium error, earum
           repellendus officiis minus non veritatis.</p>
       </div>
 
-      <div class="contact">
+      <!-- <div class="contact">
         <form action="#" class="contact__form">
           <div class="contact__field">
             <div class="contact__field--wrapper">
@@ -884,14 +865,15 @@
           </div>
           <div class="contact__field">
             <div class="contact__field--wrapper">
-              <input type="number" name="number" id="number" class="contact__field--input" placeholder="Phone Number">
+              <input type="text" name="number" id="number" class="contact__field--input" placeholder="Phone Number">
             </div>
             <div class="contact__field--wrapper">
               <select name="project" id="project" class="contact__field--select">
                 <option value="">Select Project Type</option>
-                <option value="project1">project-1</option>
-                <option value="project2">project-2</option>
-                <option value="project3">project3</option>
+                <option value="project1">JUST BEGIN (STARTING AT - $ 99)</option>
+                <option value="project2">SMALL BUSINESSES (STARTING AT - $189)</option>
+                <option value="project3">GROWTH HACK (STARTING AT - $259)</option>
+                <option value="project4">DISRUPTIVE DEVELOPMENT (STARTING AT - $599)</option>
               </select>
             </div>
           </div>
@@ -906,12 +888,122 @@
             <a href="#" class="md__btn md__btn--primary">Contact Now</a>
           </div>
         </form>
-        <!-- end of form -->
-      </div>
-      <!-- end of contact -->
+      </div> -->
+
+      <div role="form" class="wpcf7" id="wpcf7-f6-p1-o1" lang="en-US" dir="ltr">
+          <div class="screen-reader-response"></div>
+          <form
+            action="/2019/07/09/hello-world/?preview_id=1&#038;preview_nonce=224ae9d580&#038;preview=true#wpcf7-f6-p1-o1"
+            method="post"
+            class="wpcf7-form"
+            novalidate="novalidate"
+          >
+            <div style="display: none;">
+              <input type="hidden" name="_wpcf7" value="6" />
+              <input type="hidden" name="_wpcf7_version" value="5.1.3" />
+              <input type="hidden" name="_wpcf7_locale" value="en_US" />
+              <input type="hidden" name="_wpcf7_unit_tag" value="wpcf7-f6-p1-o1" />
+              <input type="hidden" name="_wpcf7_container_post" value="1" />
+            </div>
+            <div class="contact__field">
+              <div class="contact__field--wrapper">
+                <span class="wpcf7-form-control-wrap fullname"
+                  ><input
+                    type="text"
+                    name="fullname"
+                    value=""
+                    size="40"
+                    class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required contact__field--input"
+                    id="fullname"
+                    aria-required="true"
+                    aria-invalid="false"
+                    placeholder="Full Name (Required)"
+                /></span>
+              </div>
+              <div class="contact__field--wrapper">
+                <span class="wpcf7-form-control-wrap email"
+                  ><input
+                    type="email"
+                    name="email"
+                    value=""
+                    size="40"
+                    class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email contact__field--input"
+                    id="email"
+                    aria-required="true"
+                    aria-invalid="false"
+                    placeholder="Full Name (Required)"
+                /></span>
+              </div>
+            </div>
+            <div class="contact__field">
+              <div class="contact__field--wrapper">
+                <span class="wpcf7-form-control-wrap phonenum"
+                  ><input
+                    type="tel"
+                    name="phonenum"
+                    value=""
+                    size="40"
+                    class="wpcf7-form-control wpcf7-text wpcf7-tel wpcf7-validates-as-required wpcf7-validates-as-tel contact__field--input"
+                    id="phonenum"
+                    aria-required="true"
+                    aria-invalid="false"
+                    placeholder="Phone Number (Required)"
+                /></span>
+              </div>
+              <div class="contact__field--wrapper">
+                <span class="wpcf7-form-control-wrap projects"
+                  ><select
+                    name="projects"
+                    class="wpcf7-form-control wpcf7-select wpcf7-validates-as-required contact__field--select"
+                    id="projects"
+                    aria-required="true"
+                    aria-invalid="false"
+                    ><option value="">---</option
+                    ><option value="JUST BEGIN (STARTING AT - $ 99)"
+                      >JUST BEGIN (STARTING AT - $ 99)</option
+                    ><option value="SMALL BUSINESSES (STARTING AT - $189)"
+                      >SMALL BUSINESSES (STARTING AT - $189)</option
+                    ><option value="GROWTH HACK (STARTING AT - $259)"
+                      >GROWTH HACK (STARTING AT - $259)</option
+                    ><option value="DISRUPTIVE DEVELOPMENT (STARTING AT - $599)"
+                      >DISRUPTIVE DEVELOPMENT (STARTING AT - $599)</option
+                    ><option value="OTHER (I WANT TO DISCUSS FIRST)"
+                      >OTHER (I WANT TO DISCUSS FIRST)</option
+                    ></select
+                  ></span
+                >
+              </div>
+            </div>
+            <div class="contact__text">
+              <div class="contact__text--wrapper">
+                <span class="wpcf7-form-control-wrap brief"
+                  ><textarea
+                    name="brief"
+                    cols="40"
+                    rows="10"
+                    class="wpcf7-form-control wpcf7-textarea wpcf7-validates-as-required contact__text--area"
+                    id="brief"
+                    aria-required="true"
+                    aria-invalid="false"
+                    placeholder="Project Description(Required)"
+                  ></textarea
+                ></span>
+              </div>
+            </div>
+            <div class="contact__submit">
+              <input
+                type="submit"
+                value="Let's Discuss"
+                class="wpcf7-form-control wpcf7-submit md__btn md__btn--primary"
+                id="df"
+              />
+            </div>
+            <div class="wpcf7-response-output wpcf7-display-none"></div>
+          </form>
+        </div>
 
       <div class="source">
-        <div class="source__item">
+        <a href="tel:+8801722893129" class="source__item">
           <div>
             <svg class="source__item--icon">
               <use xlink:href="./assets/icon/sprite.svg#icon-ionicons_svg_md-call"></use>
@@ -922,9 +1014,9 @@
             <p>call now</p>
             <h4>+880 1722 893129</h4>
           </div>
-        </div>
+        </a>
 
-        <div class="source__item">
+        <a href="mailto:contact@1mandev.com" class="source__item">
           <div>
             <svg class="source__item--icon">
               <use xlink:href="./assets/icon/sprite.svg#icon-ionicons_svg_md-mail"></use>
@@ -935,9 +1027,9 @@
             <p>email us</p>
             <h4 class="small">contact@1mandev.com</h4>
           </div>
-        </div>
+        </a>
 
-        <div class="source__item">
+        <a href="callto:1mandev.com" class="source__item">
           <div>
             <svg class="source__item--icon">
               <use xlink:href="./assets/icon/sprite.svg#icon-skype"></use>
@@ -948,20 +1040,74 @@
             <p>skype</p>
             <h4>1mandev</h4>
           </div>
-        </div>
+        </a>
       </div>
       <!-- end of source -->
     </section>
     <!-- ecd of section-contact -->
   </main>
 
-  <footer>
+  <footer class="footer">
+    <div class="footer__box">
+      <div class="footer__box--about">
+        <div class="fabout__image">
+          <img src="/assets/img/logo-colordark.png" alt="Site Footer Logo">
+        </div>
+        <div class="fabout__info">
+          <h3 class="fabout__info--title">1MANDEV.COM</h3>
+          <p class="fabout__info--details">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam magnam qui, facilis praesentium sed tempora quaerat veniam? Architecto pariatur accusantium unde dicta obcaecati. Possimus, laudantium omnis debitis molestias porro quas!</p>
+        </div>
 
+      </div>
+      <div class="footer__box--menu-1">
+        <ul class="fmenu">
+          <li><a href="#">Serives</a></li>
+          <li><a href="#">Pricing</a></li>
+          <li><a href="#">Why Us</a></li>
+          <li><a href="#">Portfolio</a></li>
+          <li><a href="#">Testimonials</a></li>
+        </ul>
+      </div>
+      <div class="footer__box--menu-2">
+        <ul class="fmenu">
+          <li><a href="#">Contact Us</a></li>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Terms & Conditions</a></li>
+        </ul>
+      </div>
+      <div class="footer__box--social">
+        <ul class="fsocial">
+          <li>
+            <a href="#">
+              <i class="fab fa-facebook-square"></i>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fab fa-twitter-square"></i>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fab fa-linkedin"></i>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fab fa-github-square"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer__copyright">
+      <p>&copy; All rights reserved by <a href="http://1mandev.com">1ManDev.com</a></p>
+    </div>
   </footer>
   <!-- ========== jQuery ========== -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script src="./js/flickity.pkgd.min.js"></script>
-  <script src="./js/aos.js"></script>
+  <script src="./js/flickity.min.js"></script>
 
   <!-- ========== Main Script ========== -->
   <script src="js/main.js"></script>

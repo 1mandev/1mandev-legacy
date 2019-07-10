@@ -17,6 +17,10 @@
     position: absolute;
     right: -10rem;
     top: -12rem;
+
+    @include respond(tab-port) {
+      display: none;
+    }
   }
 
   &__box {
@@ -32,14 +36,26 @@
     -o-transform: translate(-50%, -50%);
     width: 80%;
 
+    @include respond(tab-port) {
+      text-align: center;
+    }
+
     &--tagline {
       font-family: $heading-fonts;
+
+      @include respond(tab-port) {
+        font-size: 3.1rem;
+      }
     }
 
     &--intro {
       padding: 2rem 0;
-      font-size: 1.5rem;
+      font-size: 1.7rem;
       width: 60%;
+
+      @include respond(tab-port) {
+        margin: 0 auto;
+      }
     }
 
     &--c2a {
@@ -101,7 +117,7 @@
         rgba($secondary-color, 0.95)
       ),
       url("../assets/img/hero.png");
-    padding: 6.4rem 1.6rem;
+    padding: 8rem 1.6rem;
 
     &--content {
       background: rgba($light-color, 0.8);

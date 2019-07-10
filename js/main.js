@@ -1,16 +1,3 @@
-// aos
-AOS.init();
-
-// Navigation
-const nav = document.querySelector(".nav");
-const toggleNav = document.querySelector("#toggle-navigation");
-const navigation = document.querySelector(".navigation");
-
-toggleNav.addEventListener("click", () => {
-  nav.classList.toggle("navigation-closed");
-  navigation.classList.toggle("navigation-open");
-});
-
 // Testimonial carousal
 var elem = document.querySelector(".testimonial-carousel");
 var flkty = new Flickity(elem, {
@@ -29,4 +16,12 @@ var flkty = new Flickity(portfolio, {
   contain: true,
   wrapAround: true,
   autoPlay: 5000
+});
+
+// nav
+const button = document.querySelector(".navigation__toggle");
+const body = document.querySelector("body");
+
+button.addEventListener("click", () => {
+  body.classList.toggle("open");
 });
