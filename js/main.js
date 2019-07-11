@@ -14,8 +14,8 @@ var flkty = new Flickity(portfolio, {
   // options
   cellAlign: "left",
   contain: true,
-  wrapAround: true,
-  autoPlay: 5000
+  wrapAround: true
+  // autoPlay: 5000
 });
 
 // nav

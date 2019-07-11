@@ -108,21 +108,41 @@
     color: #fff;
     text-transform: capitalize;
 
+    @include respond(phone) {
+      display: flex;
+      justify-content: center;
+    }
+
     &--topic {
       flex: 1;
       display: flex;
       justify-content: space-around;
       align-items: center;
+
+      @include respond(phone) {
+        flex: 1 1 0;
+        justify-content: flex-end;
+      }
     }
 
     &--icon-wrapper {
       margin-left: 4.5rem;
+
+      @include respond(phone) {
+        margin-left: 3rem;
+        margin-right: 0.5rem;
+      }
     }
 
     &--icon {
       height: 4rem;
       width: 4rem;
       fill: #fff;
+
+      @include respond(phone) {
+        height: 3.2rem;
+        width: 3.2rem;
+      }
     }
 
     &--text {
@@ -131,6 +151,10 @@
 
     &--text h4 {
       text-transform: inherit;
+
+      @include respond(phone) {
+        font-size: 1.4rem;
+      }
     }
 
     &--text p {
@@ -143,6 +167,10 @@
       color: #fff;
       font-size: 2rem;
       font-family: $heading-fonts;
+
+      @include respond(phone) {
+        font-size: 1.6rem;
+      }
     }
   }
 }

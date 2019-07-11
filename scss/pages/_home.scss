@@ -164,15 +164,15 @@
       -o-transition: all 0.3s ease-in-out;
 
       @include respond(tab-port) {
-        height: 25rem;
+        height: 35rem;
       }
 
       @include respond(phone) {
-        height: 32rem;
+        height: 42rem;
       }
 
       @include respond(ext-small) {
-        height: 35rem;
+        height: 48rem;
       }
     }
 
@@ -240,6 +240,10 @@
 
       @include respond(phone) {
         height: 18rem;
+      }
+
+      @include respond(ext-small) {
+        height: 20rem;
       }
     }
 
@@ -347,5 +351,12 @@
 
   .flickity-button-icon {
     fill: $secondary-color;
+  }
+}
+
+// contact
+.section-contact {
+  @include respond(phone) {
+    margin-bottom: 4rem;
   }
 }

@@ -1,23 +1,22 @@
 .wpcf7 {
   background-color: $light-color-1;
   max-width: 110rem;
-  margin: 0 auto!important;
+  margin: 0 auto !important;
   border-radius: 5px;
-  
+
   overflow: hidden;
 
   &-form {
     padding: 3.5rem 1rem;
     display: flex;
     flex-direction: column;
-    
   }
 
-  &-not-valid-tip{
+  &-not-valid-tip {
     padding: 2rem 3rem;
   }
 
-  &-response-output{
+  &-response-output {
     text-align: center;
     margin: 2rem 3rem !important;
     padding: 2rem !important;
@@ -25,26 +24,23 @@
     background-color: $light-color;
   }
 
-  &-validation-errors{
-    border-color: $secondary-color!important;
+  &-validation-errors {
+    border-color: $secondary-color !important;
   }
 
-  &-mail-sent-ok{
-    border-color: $primary-color!important;
+  &-mail-sent-ok {
+    border-color: $primary-color !important;
   }
-
 }
 
-.contact{
+.contact {
   &__field {
     display: flex;
     padding-bottom: 3rem;
-    
 
     &--wrapper {
       flex: 0 0 50%;
       position: relative;
-      
     }
 
     &--input {
@@ -78,7 +74,8 @@
       -webkit-appearance: none;
       -moz-appearance: none;
       appearance: none;
-      background: url(../../assets/icon/chevron-small-down.svg) white no-repeat calc(100% - 1.5rem) !important;
+      background: url(../../assets/icon/chevron-small-down.svg) white no-repeat
+        calc(100% - 1.5rem) !important;
     }
 
     &--select::after {
@@ -126,7 +123,7 @@
   &__submit {
     margin: 0 auto;
     margin-top: 4rem;
-    input[type="submit"]{
+    input[type="submit"] {
       border: none;
       outline: none;
       cursor: pointer;
@@ -137,15 +134,20 @@
   }
 }
 
-
 // contact source
 .source {
-  
   max-width: 110rem;
   margin: 4rem auto 0 auto;
   overflow: hidden;
   display: flex;
   justify-content: space-between;
+
+  @include respond(phone) {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    padding: 2rem;
+  }
 
   &__item {
     text-decoration: none;
@@ -154,11 +156,12 @@
     box-sizing: border-box;
     background-color: $light-color-1;
     padding: 2rem 2rem;
+    margin-bottom: 1rem;
     border-radius: 5px;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    transition: all .3s ease-in-out;
+    transition: all 0.3s ease-in-out;
 
     &--icon {
       height: 4rem;
@@ -184,7 +187,7 @@
       font-size: 1.6rem;
     }
 
-    &:hover{
+    &:hover {
       border-color: $primary-color;
     }
   }

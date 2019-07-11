@@ -671,6 +671,12 @@ section {
   overflow: hidden;
   display: flex;
   justify-content: space-between; }
+  @media only screen and (max-width: 37.5em) {
+    .source {
+      display: flex;
+      flex-direction: column;
+      margin: auto;
+      padding: 2rem; } }
   .source__item {
     text-decoration: none;
     border: 2px solid #f1f1f1;
@@ -678,11 +684,12 @@ section {
     box-sizing: border-box;
     background-color: #faf9f9;
     padding: 2rem 2rem;
+    margin-bottom: 1rem;
     border-radius: 5px;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    transition: all .3s ease-in-out; }
+    transition: all 0.3s ease-in-out; }
     .source__item--icon {
       height: 4rem;
       width: 4rem;
@@ -828,21 +835,40 @@ section {
     display: flex;
     color: #fff;
     text-transform: capitalize; }
+    @media only screen and (max-width: 37.5em) {
+      .portfolio__info {
+        display: flex;
+        justify-content: center; } }
     .portfolio__info--topic {
       flex: 1;
       display: flex;
       justify-content: space-around;
       align-items: center; }
+      @media only screen and (max-width: 37.5em) {
+        .portfolio__info--topic {
+          flex: 1 1 0;
+          justify-content: flex-end; } }
     .portfolio__info--icon-wrapper {
       margin-left: 4.5rem; }
+      @media only screen and (max-width: 37.5em) {
+        .portfolio__info--icon-wrapper {
+          margin-left: 3rem;
+          margin-right: 0.5rem; } }
     .portfolio__info--icon {
       height: 4rem;
       width: 4rem;
       fill: #fff; }
+      @media only screen and (max-width: 37.5em) {
+        .portfolio__info--icon {
+          height: 3.2rem;
+          width: 3.2rem; } }
     .portfolio__info--text {
       flex: 0 0 60%; }
     .portfolio__info--text h4 {
       text-transform: inherit; }
+      @media only screen and (max-width: 37.5em) {
+        .portfolio__info--text h4 {
+          font-size: 1.4rem; } }
     .portfolio__info--text p {
       font-size: 1.6rem; }
     .portfolio__info--text a {
@@ -851,6 +877,9 @@ section {
       color: #fff;
       font-size: 2rem;
       font-family: "Exo", Arial, Helvetica, sans-serif; }
+      @media only screen and (max-width: 37.5em) {
+        .portfolio__info--text a {
+          font-size: 1.6rem; } }
 
 .testimonial-wrapper {
   width: 100%;
@@ -1177,13 +1206,13 @@ section {
     -o-transition: all 0.3s ease-in-out; }
     @media only screen and (max-width: 56.25em) {
       .services__box--content {
-        height: 25rem; } }
+        height: 35rem; } }
     @media only screen and (max-width: 37.5em) {
       .services__box--content {
-        height: 32rem; } }
+        height: 42rem; } }
     @media only screen and (max-width: 25em) {
       .services__box--content {
-        height: 35rem; } }
+        height: 48rem; } }
   .services__box--content:hover {
     cursor: default;
     transform: translateY(-1rem) scale(1.05);
@@ -1234,6 +1263,9 @@ section {
       @media only screen and (max-width: 37.5em) {
         .stack__box--content {
           height: 18rem; } }
+      @media only screen and (max-width: 25em) {
+        .stack__box--content {
+          height: 20rem; } }
     .stack__box--content:hover {
       border-color: #f68657;
       cursor: default; }
@@ -1303,3 +1335,7 @@ section {
 
 .section-portfolio .flickity-button-icon {
   fill: #f6b352; }
+
+@media only screen and (max-width: 37.5em) {
+  .section-contact {
+    margin-bottom: 4rem; } }
