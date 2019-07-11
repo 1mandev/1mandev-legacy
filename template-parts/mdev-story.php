@@ -1,25 +1,19 @@
 <section class="story" id="story">
-      <div class="content-box">
-        <div class="story__box row">
-          <div class="col-1-of-2">
-            <div class="story__box--intro">
-              <h2>A True <span>Story Indeed.</span></h2>
-              <p><i class="fa fa-arrow-circle-right md-anim-smallSlideRightLeft md-anim-infinity md-anim-delay md-anim-easeInOut"></i>
-              </p>
-            </div>
-          </div>
-          <div class="col-1-of-2">
-            <p class="story__box--text">
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nostrum, dignissimos, at commodi nulla
-              ducimus
-              ipsa voluptatibus beatae atque id fuga minus perferendis molestiae pariatur voluptatem? Asperiores
-              omnis
-              rerum ipsa sunt. Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus autem pariatur,
-              culpa dolorem voluptatem, laboriosam similique numquam eaque saepe magnam dolore facere officia minus
-              esse vitae incidunt error ab itaque.
-            </p>
-          </div>
+  <div class="content-box">
+    <div class="story__box row">
+      <div class="col-1-of-2">
+        <div class="story__box--intro">
+          <h2>A True <span>Story Indeed.</span></h2>
+          <p><i class="fa fa-arrow-circle-right md-anim-smallSlideRightLeft md-anim-infinity md-anim-delay md-anim-easeInOut"></i>
+          </p>
         </div>
       </div>
+      <div class="col-1-of-2">
+        <p class="story__box--text">
+          1MANDEV.com was started with just 1 person back in 2017. From then on, we grow as a team a little by little. All of our team members are so much passionate about what we are stand for here at 1MANDEV. For the last two years, we have successfully designed and delivered more than 50+ websites. Every website we build, we enjoyed the thrill of the journey from zero to hit the milestones. It’s all about our happy customers, which makes us so proud as a Team and as a Business.
+        </p>
+      </div>
+    </div>
+  </div>
 
-    </section>
+</section>

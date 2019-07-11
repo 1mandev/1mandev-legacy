@@ -2,11 +2,8 @@
   <div class="section__box">
     <h2 class="section__box--intro">Testimonials &mdash; What People say</h2>
     <i class="section__box--icon md-anim-smallSlideDownUp md-anim-infinity md-anim-delay md-anim-easeInOut fa fa-arrow-circle-down"></i>
-    <p class="section__box--text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem tempora tempore
-      quos maiores totam. Possimus laboriosam quo, quis fugiat omnis dolore tempora accusantium error, earum
-      repellendus officiis minus non veritatis.</p>
+    <p class="section__box--text">We're constantly collecting our customers' feedback. We tried our best to meet the satisfaction of our customer. Surprisingly, they do speak for us. Here are some.</p>
   </div>
-
   <div class="testimonial-carousel">
     <?php
     $testimonials = new WP_Query(
@@ -35,8 +32,6 @@
             </div>
           </div>
         </div>
-
-
       </div>
     <?php endwhile;
     wp_reset_query(); ?>

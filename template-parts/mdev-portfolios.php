@@ -2,9 +2,7 @@
   <div class="section__box">
     <h2 class="section__box--intro">portfolio &mdash; made with love</h2>
     <i class="section__box--icon md-anim-smallSlideDownUp md-anim-infinity md-anim-delay md-anim-easeInOut fa fa-arrow-circle-down"></i>
-    <p class="section__box--text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem tempora tempore
-      quos maiores totam. Possimus laboriosam quo, quis fugiat omnis dolore tempora accusantium error, earum
-      repellendus officiis minus non veritatis.</p>
+    <p class="section__box--text">For the last two years, we made 50+ websites. Each time, we make our customer successful with our services, we are feeling like the battle winners. It’s about our customer, what makes us so proud.</p>
   </div>
   <div class="portfolio-carousel">
 

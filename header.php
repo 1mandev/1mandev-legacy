@@ -61,8 +61,8 @@
     </div>
 
     <div class="nav__menu-bar">
-      <a href="#" class="md__btn md__btn--primary">Client Area</a>
-      <a href="get-started.html" class="md__btn md__btn--secondary">Get Started</a>
+      <!-- <a href="#" class="md__btn md__btn--primary">Client Area</a> -->
+      <a href="<?php echo site_url('#contact-us') ?>" class="md__btn md__btn--dark">Let's Discuss</a>
     </div>
   </header>
 

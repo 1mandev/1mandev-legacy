@@ -2,9 +2,7 @@
   <div class="section__box">
     <h2 class="section__box--intro">Services &mdash; We Offer</h2>
     <i class="section__box--icon md-anim-smallSlideDownUp md-anim-infinity md-anim-delay md-anim-easeInOut fa fa-arrow-circle-down"></i>
-    <p class="section__box--text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem tempora tempore
-      quos maiores totam. Possimus laboriosam quo, quis fugiat omnis dolore tempora accusantium error, earum
-      repellendus officiis minus non veritatis.</p>
+    <p class="section__box--text">We are very specific about the services, we offer. Currently, there 4 types of services we offer at 1MANDEV. And one more thing, we very much aware of what can we produce and what can we deliver to you on time.</p>
   </div>
 
   <div class="services__box">
@@ -16,9 +14,7 @@
             <h2 class="services__box--intro">
               UI/ UX Design
             </h2>
-            <p class="services__box--text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis
-              repellendus minus aperiam, inventore quas quam iusto ab! Expedita aliquid esse dicta quod molestias,
-              quibusdam ipsam consectetur inventore placeat ipsa obcaecati?</p>
+            <p class="services__box--text">Beautifully crafted and carefully designed websites are key to success. Our design team is nailed at driving the best user experiences that grab the attention of your audience instantaneously. We design the UI and UX for your website that just works.</p>
           </div>
         </div>
 
@@ -28,9 +24,7 @@
             <h2 class="services__box--intro">
               WordPress Development
             </h2>
-            <p class="services__box--text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis
-              repellendus minus aperiam, inventore quas quam iusto ab! Expedita aliquid esse dicta quod molestias,
-              quibusdam ipsam consectetur inventore placeat ipsa obcaecati?</p>
+            <p class="services__box--text">Looking for developing a blog site on your niche? Launching your new business? With WordPress, you can have the power to publish your own contents on the fly. We can help you to grow with your business/niche website with WordPress. Our team is always ready to design and develop the fully-customized WordPress website.</p>
           </div>
         </div>
 
@@ -40,9 +34,7 @@
             <h2 class="services__box--intro">
               E-commerce Development
             </h2>
-            <p class="services__box--text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis
-              repellendus minus aperiam, inventore quas quam iusto ab! Expedita aliquid esse dicta quod molestias,
-              quibusdam ipsam consectetur inventore placeat ipsa obcaecati?</p>
+            <p class="services__box--text">If you are having a business or looking forward to opening a business in which you can sell your product, all you need is a website that can display your products to your right audience. Our team can help you to build a full-fledged e-commerce website from inventory management to payment gateway.</p>
           </div>
         </div>
 
@@ -52,9 +44,7 @@
             <h2 class="services__box--intro">
               Web App Development
             </h2>
-            <p class="services__box--text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis
-              repellendus minus aperiam, inventore quas quam iusto ab! Expedita aliquid esse dicta quod molestias,
-              quibusdam ipsam consectetur inventore placeat ipsa obcaecati?</p>
+            <p class="services__box--text">Have an idea? Need a website that really works with a lot of users? Want to change the world? Well, here is good news. Our battle-proven designers and developers and are ready to design and develop your web application just on time, under the budget like it’s their own battle to bring an idea from zero to 1.</p>
           </div>
         </div>
       </div>

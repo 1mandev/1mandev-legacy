@@ -755,17 +755,21 @@ section {
       padding-bottom: 1.1rem; }
     .portfolio__description--stack span {
       display: inline-flex;
-      justify-content: center;
+      justify-content: space-between;
       align-items: center;
-      height: 6rem;
-      width: 6rem;
-      border-radius: 50%;
       text-transform: uppercase;
-      border: 2px solid #81858f;
+      font-size: 1.1rem;
+      background-color: #fefefe;
+      padding: 5px 1.5rem;
+      border-radius: 2rem;
+      margin: 1rem 0;
       color: #f68657;
+      border: 2px solid #b2b2b2;
       font-weight: bold;
-      letter-spacing: 0.15rem;
+      letter-spacing: 1px;
       margin-right: 0.5rem; }
+      .portfolio__description--stack span:hover {
+        border-color: #f6b352; }
   .portfolio__info {
     background-color: #f68657;
     margin-top: 3rem;
@@ -1050,8 +1054,8 @@ section {
   background-size: contain; }
   .services__box--content {
     background: rgba(254, 254, 254, 0.8);
-    padding: 4rem 3.2rem;
-    height: 35rem;
+    padding: 5rem 2.8rem;
+    height: 40rem;
     box-shadow: 0.1rem 0.1rem 0.5rem rgba(56, 58, 63, 0.25);
     text-align: center;
     border-radius: 0.5rem;
@@ -1059,6 +1063,9 @@ section {
     -moz-border-radius: 0.5rem;
     -ms-border-radius: 0.5rem;
     -o-border-radius: 0.5rem;
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
     transition: all 0.3s ease-in-out;
     -webkit-transition: all 0.3s ease-in-out;
     -moz-transition: all 0.3s ease-in-out;
@@ -1066,9 +1073,6 @@ section {
     -o-transition: all 0.3s ease-in-out; }
   .services__box--content:hover {
     cursor: default;
-    backface-visibility: hidden;
-    -webkit-backface-visibility: hidden;
-    -moz-backface-visibility: hidden;
     transform: translateY(-1rem) scale(1.05);
     -webkit-transform: translateY(-1rem) scale(1.05);
     -moz-transform: translateY(-1rem) scale(1.05);
@@ -1076,11 +1080,11 @@ section {
     -o-transform: translateY(-1rem) scale(1.05); }
   .services__box--iconimg {
     width: 5.6rem;
-    padding-bottom: 2rem; }
+    padding-bottom: 1rem; }
   .services__box--intro {
     font-size: 2rem;
     color: #f68657;
-    padding-bottom: 1.6rem; }
+    padding-bottom: 1rem; }
   .services__box--text {
     text-align: justify; }
 
@@ -1091,7 +1095,7 @@ section {
     .stack__box--content {
       position: relative;
       padding: 2rem 3.2rem;
-      height: 18rem;
+      height: 24rem;
       border: 0.3rem solid rgba(56, 58, 63, 0.3);
       border-radius: 1rem;
       -webkit-border-radius: 1rem;
@@ -1110,7 +1114,7 @@ section {
       display: inline-block;
       position: absolute;
       top: 3.6rem;
-      left: 9rem;
+      left: 10rem;
       color: #f68657; }
     .stack__box--icon {
       width: 5rem; }

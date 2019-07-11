@@ -121,8 +121,8 @@
 
     &--content {
       background: rgba($light-color, 0.8);
-      padding: 4rem 3.2rem;
-      height: 35rem;
+      padding: 5rem 2.8rem;
+      height: 40rem;
       box-shadow: 0.1rem 0.1rem 0.5rem rgba($dark-color, 0.25);
       text-align: center;
       border-radius: 0.5rem;
@@ -130,6 +130,9 @@
       -moz-border-radius: 0.5rem;
       -ms-border-radius: 0.5rem;
       -o-border-radius: 0.5rem;
+      backface-visibility: hidden;
+      -webkit-backface-visibility: hidden;
+      -moz-backface-visibility: hidden;
       transition: all 0.3s ease-in-out;
       -webkit-transition: all 0.3s ease-in-out;
       -moz-transition: all 0.3s ease-in-out;
@@ -139,9 +142,6 @@
 
     &--content:hover {
       cursor: default;
-      backface-visibility: hidden;
-      -webkit-backface-visibility: hidden;
-      -moz-backface-visibility: hidden;
       transform: translateY(-1rem) scale(1.05);
       -webkit-transform: translateY(-1rem) scale(1.05);
       -moz-transform: translateY(-1rem) scale(1.05);
@@ -151,13 +151,13 @@
 
     &--iconimg {
       width: 5.6rem;
-      padding-bottom: 2rem;
+      padding-bottom: 1rem;
     }
 
     &--intro {
       font-size: 2rem;
       color: $primary-color;
-      padding-bottom: 1.6rem;
+      padding-bottom: 1rem;
     }
 
     &--text {
@@ -176,7 +176,7 @@
       
       position: relative;
       padding: 2rem 3.2rem;
-      height: 18rem;
+      height: 24rem;
       border: 0.3rem solid rgba($dark-color, 0.3);
       border-radius: 1rem;
       -webkit-border-radius: 1rem;
@@ -199,7 +199,7 @@
       display: inline-block;
       position: absolute;
       top: 3.6rem;
-      left: 9rem;
+      left: 10rem;
       color: $primary-color;
     }
 

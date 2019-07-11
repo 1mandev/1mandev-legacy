@@ -2,9 +2,7 @@
   <div class="section__box">
     <h2 class="section__box--intro">Contact us &mdash; Let's Talk About The Project</h2>
     <i class="section__box--icon md-anim-smallSlideDownUp md-anim-infinity md-anim-delay md-anim-easeInOut fa fa-arrow-circle-down"></i>
-    <p class="section__box--text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem tempora tempore
-      quos maiores totam. Possimus laboriosam quo, quis fugiat omnis dolore tempora accusantium error, earum
-      repellendus officiis minus non veritatis.</p>
+    <p class="section__box--text">So, you are interested to work with us? Please send us the details of your project. One of our best agents will get back to you as soon as possible. You also can quick chat with our agent from the icon on the bottom right corner of the website.</p>
   </div>
 
   <?php echo do_shortcode('[contact-form-7 id="6" title="CONTACT US (Homepage)"]'); ?>

@@ -12,11 +12,11 @@
     </div>
     <div class="footer__box--menu-1">
       <ul class="fmenu">
-        <li><a href="#">Serives</a></li>
-        <li><a href="#">Pricing</a></li>
-        <li><a href="#">Why Us</a></li>
-        <li><a href="#">Portfolio</a></li>
-        <li><a href="#">Testimonials</a></li>
+        <li><a href="<?php echo site_url('#services') ?>">Serives</a></li>
+        <li><a href="<?php echo site_url('#pricing') ?>">Pricing</a></li>
+        <li><a href="<?php echo site_url('#why-us') ?>">Why Us</a></li>
+        <li><a href="<?php echo site_url('#portfolio') ?>">Portfolio</a></li>
+        <li><a href="<?php echo site_url('#testimonials') ?>">Testimonials</a></li>
       </ul>
     </div>
     <div class="footer__box--menu-2">
@@ -29,10 +29,10 @@
     </div>
     <div class="footer__box--social">
       <ul class="fsocial">
-        <li><a href="#"><i class="fab fa-facebook-square"></i></a></li>
-        <li><a href="#"><i class="fab fa-twitter-square"></i></a></li>
-        <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
-        <li><a href="#"><i class="fab fa-github-square"></i></a> </li>
+        <li><a href="http://facebook.com/1ManDev" target="_blank"><i class="fab fa-facebook-square"></i></a></li>
+        <li><a href="http://twitter.com/1Mandev" target="_blank"><i class="fab fa-twitter-square"></i></a></li>
+        <li><a href="https://www.linkedin.com/company/1mandev" target="_blank"><i class="fab fa-linkedin"></i></a></li>
+        <li><a href="https://github.com/1mandev" target="_blank"><i class="fab fa-github-square"></i></a> </li>
       </ul>
     </div>
   </div>
