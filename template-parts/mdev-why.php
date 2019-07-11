@@ -7,6 +7,7 @@
 
   <div class="credential">
     <div class="credential__list">
+      
       <div class="credential__item">
         <div class="credential__elem">
           <div class="credential__elem--number">01</div>
@@ -54,10 +55,10 @@
           <p>OUR no. #1 priority is maintaining the security of the website.</p>
         </div>
       </div>
-    </div>
+
     <!-- end of credential-list1 -->
 
-    <div class="credential__list">
+
       <div class="credential__item">
         <div class="credential__elem">
           <div class="credential__elem--number">04</div>
@@ -105,7 +106,7 @@
           <p>Even if the service is over, we love to give our customer lifetime support.*</p>
         </div>
       </div>
-    </div>
+
     <!-- end of credential-list2 -->
   </div>
 </section>
