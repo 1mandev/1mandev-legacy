@@ -56,6 +56,10 @@
       @include respond(tab-port) {
         margin: 0 auto;
       }
+
+      @include respond(phone) {
+        width: 80%;
+      }
     }
 
     &--c2a {
@@ -75,6 +79,10 @@
 .story {
   text-align: justify;
 
+  @include respond(tab-port) {
+    text-align: center;
+  }
+
   &__box {
     padding: 3.2rem 6.4rem;
     background-color: darken($light-color, 3%);
@@ -84,6 +92,10 @@
     -moz-border-radius: 0.8rem;
     -ms-border-radius: 0.8rem;
     -o-border-radius: 0.8rem;
+
+    @include respond(phone) {
+      padding: 3.2rem 5.6rem;
+    }
 
     &--intro {
       h2 {
@@ -102,6 +114,14 @@
 
     &--text {
       line-height: 2;
+
+      @include respond(tab-port) {
+        font-size: 1.6rem;
+      }
+
+      @include respond(phone) {
+        text-align: justify;
+      }
     }
   }
 }
@@ -133,6 +153,18 @@
       -moz-transition: all 0.3s ease-in-out;
       -ms-transition: all 0.3s ease-in-out;
       -o-transition: all 0.3s ease-in-out;
+
+      @include respond(tab-port) {
+        height: 25rem;
+      }
+
+      @include respond(phone) {
+        height: 32rem;
+      }
+
+      @include respond(ext-small) {
+        height: 35rem;
+      }
     }
 
     &--content:hover {
@@ -160,6 +192,16 @@
 
     &--text {
       text-align: justify;
+
+      @include respond(tab-port) {
+        text-align: center;
+        font-size: 1.6rem;
+      }
+
+      @include respond(phone) {
+        text-align: justify;
+        font-size: 1.6rem;
+      }
     }
   }
 }
@@ -185,6 +227,14 @@
       -moz-transition: all 0.3s ease-in-out;
       -ms-transition: all 0.3s ease-in-out;
       -o-transition: all 0.3s ease-in-out;
+
+      @include respond(tab-port) {
+        height: 16rem;
+      }
+
+      @include respond(phone) {
+        height: 18rem;
+      }
     }
 
     &--content:hover {
