@@ -136,6 +136,8 @@
       ),
       url("../assets/img/services.jpg");
     padding: 10rem 1.6rem;
+    background-position: center;
+    background-size: contain;
 
     &--content {
       background: rgba($light-color, 0.8);
@@ -213,6 +215,7 @@
     margin-top: 5rem;
 
     &--content {
+      
       position: relative;
       padding: 2rem 3.2rem;
       height: 18rem;
@@ -240,10 +243,6 @@
     &--content:hover {
       border-color: $primary-color;
       cursor: default;
-
-      h2 {
-        color: $primary-color;
-      }
     }
 
     &--intro {
@@ -251,6 +250,7 @@
       position: absolute;
       top: 3.6rem;
       left: 9rem;
+      color: $primary-color;
     }
 
     &--icon {

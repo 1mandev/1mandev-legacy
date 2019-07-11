@@ -527,9 +527,12 @@ section {
   .credential__text {
     flex: 1;
     padding-bottom: 3.2rem;
-    font-size: 1.6rem;
+    padding-right: 1rem;
+    font-size: 1.3rem;
     font-weight: bold;
     text-transform: uppercase; }
+    .credential__text h3 {
+      font-size: 2rem; }
     .credential__text p {
       color: #81858f; }
 
@@ -925,6 +928,11 @@ section {
           margin-bottom: 1rem; }
         .footer__box--about .fabout__info--details {
           text-align: justify; }
+      @media only screen and (max-width: 75em) {
+        .footer__box--about {
+          flex-direction: column; }
+          .footer__box--about .fabout__info {
+            padding: 0; } }
     .footer__box--menu-1 {
       flex: 1;
       align-self: center;
@@ -948,6 +956,9 @@ section {
       .footer__box--social .fsocial {
         display: flex;
         justify-content: space-around; }
+        @media only screen and (max-width: 75em) {
+          .footer__box--social .fsocial {
+            justify-content: space-evenly; } }
         .footer__box--social .fsocial li {
           width: 4rem;
           height: 4rem;
@@ -961,6 +972,16 @@ section {
           font-size: 2.4rem; }
         .footer__box--social .fsocial li:hover {
           background-color: #f6b352; }
+    @media only screen and (max-width: 37.5em) {
+      .footer__box {
+        display: block;
+        text-align: center; }
+        .footer__box--menu-1 {
+          display: none; }
+        .footer__box .fmenu {
+          display: inline-flex;
+          justify-content: space-evenly;
+          padding: 2rem 0; } }
   .footer__copyright {
     background-color: #f68657;
     color: #fefefe;
@@ -1060,7 +1081,9 @@ section {
 .services__box {
   margin-top: 5rem;
   background-image: linear-gradient(to right bottom, rgba(246, 134, 87, 0.95), rgba(246, 179, 82, 0.95)), url("../assets/img/services.jpg");
-  padding: 10rem 1.6rem; }
+  padding: 10rem 1.6rem;
+  background-position: center;
+  background-size: contain; }
   .services__box--content {
     background: rgba(254, 254, 254, 0.8);
     padding: 4rem 3.2rem;
@@ -1142,13 +1165,12 @@ section {
     .stack__box--content:hover {
       border-color: #f68657;
       cursor: default; }
-      .stack__box--content:hover h2 {
-        color: #f68657; }
     .stack__box--intro {
       display: inline-block;
       position: absolute;
       top: 3.6rem;
-      left: 9rem; }
+      left: 9rem;
+      color: #f68657; }
     .stack__box--icon {
       width: 5rem; }
 
