@@ -16,6 +16,10 @@
     padding: 0 3rem;
     display: flex;
     align-items: center;
+
+    @include respond(tab-port) {
+      flex-direction: column;
+    }
   }
 
   &__gallery {
@@ -35,9 +39,19 @@
     padding-right: 6rem;
     padding-left: 3rem;
 
+    @include respond(tab-port) {
+      padding: 3rem;
+      text-align: center;
+    }
+
     &--main {
-      padding: 4rem 0 4rem;
+      padding: 4rem 0;
       margin-bottom: 4rem;
+
+      @include respond(tab-port) {
+        margin-bottom: 2rem;
+        padding: 4rem 1.5rem;
+      }
     }
 
     &--main a {
@@ -54,6 +68,10 @@
       padding-top: 1rem;
       max-width: 50rem;
       font-size: 1.6rem;
+
+      @include respond(phone) {
+        text-align: justify;
+      }
     }
 
     &--stack h4 {
