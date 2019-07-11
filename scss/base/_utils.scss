@@ -3,13 +3,18 @@
   margin: 0 auto;
 }
 
-#card-special{
-  border: 2px solid $primary-color!important;
+#card-special {
+  border: 2px solid $primary-color !important;
 }
 
 section {
   margin-top: 16rem;
   margin-bottom: 16rem;
+
+  @include respond(tab-port) {
+    margin-top: 15rem;
+    margin-bottom: 15rem;
+  }
 
   .sec_iconimg {
     width: 4.8rem;
@@ -29,6 +34,12 @@ section {
       text-transform: uppercase;
       color: $primary-color;
       padding-bottom: 1.6rem;
+      max-width: 70rem;
+      margin: auto;
+
+      @include respond(phone) {
+        width: 40rem;
+      }
     }
 
     &--icon {
@@ -39,6 +50,11 @@ section {
     &--text {
       max-width: 70rem;
       margin: auto;
+
+      @include respond(phone) {
+        width: 40rem;
+        text-align: justify;
+      }
     }
   }
 }

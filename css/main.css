@@ -47,6 +47,9 @@ body {
   line-height: 1.6;
   box-sizing: border-box;
   margin: 1rem; }
+  @media only screen and (max-width: 37.5em) {
+    body {
+      margin: 0; } }
 
 h1,
 h2,
@@ -196,6 +199,10 @@ h6 {
 section {
   margin-top: 16rem;
   margin-bottom: 16rem; }
+  @media only screen and (max-width: 56.25em) {
+    section {
+      margin-top: 15rem;
+      margin-bottom: 15rem; } }
   section .sec_iconimg {
     width: 4.8rem; }
   section .sec_iconimg path {
@@ -208,13 +215,22 @@ section {
     section .section__box--intro {
       text-transform: uppercase;
       color: #f68657;
-      padding-bottom: 1.6rem; }
+      padding-bottom: 1.6rem;
+      max-width: 70rem;
+      margin: auto; }
+      @media only screen and (max-width: 37.5em) {
+        section .section__box--intro {
+          width: 40rem; } }
     section .section__box--icon {
       font-size: 3rem;
       padding-bottom: 1.6rem; }
     section .section__box--text {
       max-width: 70rem;
       margin: auto; }
+      @media only screen and (max-width: 37.5em) {
+        section .section__box--text {
+          width: 40rem;
+          text-align: justify; } }
 
 .navigation__button {
   background-color: #fefefe;
@@ -454,6 +470,10 @@ section {
     .md__btn {
       font-size: 1.75rem;
       padding: 1.1rem 2.7rem; } }
+  @media only screen and (max-width: 37.5em) {
+    .md__btn {
+      font-size: 1.4rem;
+      padding: 1rem 2.5rem; } }
   .md__btn:hover {
     opacity: 0.9;
     box-shadow: none;
@@ -488,12 +508,20 @@ section {
     padding: 0.7rem 2.3rem; }
 
 .credential {
-  padding: 5rem; }
+  max-width: 130rem;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  margin: 0 auto; }
+  @media only screen and (max-width: 56.25em) {
+    .credential {
+      padding-top: 1rem; } }
+  @media only screen and (max-width: 37.5em) {
+    .credential {
+      padding-top: 0; } }
   .credential__list {
     display: flex;
+    flex-flow: row wrap;
     justify-content: space-around; }
-    .credential__list:last-child {
-      padding-top: 3rem; }
   .credential__item {
     border-radius: 1rem;
     transition: all 0.3s ease-in-out;
@@ -501,10 +529,19 @@ section {
     display: flex;
     align-items: flex-end;
     border: 2px solid #d8d8d8; }
+    @media only screen and (max-width: 56.25em) {
+      .credential__item {
+        margin-top: 3rem;
+        flex: 0 0 45%; } }
+    @media only screen and (max-width: 37.5em) {
+      .credential__item {
+        flex: 0 0 80%; } }
     .credential__item:hover {
       border: 2px solid #f68657; }
       .credential__item:hover .credential__elem--number {
         color: #f68657; }
+    .credential__item:nth-child(n + 4) {
+      margin-top: 3rem; }
   .credential__elem {
     padding: 1rem 2rem;
     flex: 0 1 30%; }
@@ -724,6 +761,9 @@ section {
     padding: 0 3rem;
     display: flex;
     align-items: center; }
+    @media only screen and (max-width: 56.25em) {
+      .portfolio__content {
+        flex-direction: column; } }
   .portfolio__gallery {
     flex: 0 0 47%; }
   .portfolio__photo {
@@ -736,9 +776,17 @@ section {
     flex: 1;
     padding-right: 6rem;
     padding-left: 3rem; }
+    @media only screen and (max-width: 56.25em) {
+      .portfolio__description {
+        padding: 3rem;
+        text-align: center; } }
     .portfolio__description--main {
-      padding: 4rem 0 4rem;
+      padding: 4rem 0;
       margin-bottom: 4rem; }
+      @media only screen and (max-width: 56.25em) {
+        .portfolio__description--main {
+          margin-bottom: 2rem;
+          padding: 4rem 1.5rem; } }
     .portfolio__description--main a {
       text-decoration: none;
       cursor: pointer;
@@ -751,6 +799,9 @@ section {
       padding-top: 1rem;
       max-width: 50rem;
       font-size: 1.6rem; }
+      @media only screen and (max-width: 37.5em) {
+        .portfolio__description--main p {
+          text-align: justify; } }
     .portfolio__description--stack h4 {
       padding-bottom: 1.1rem; }
     .portfolio__description--stack span {
@@ -811,6 +862,12 @@ section {
   padding: 3rem;
   position: relative;
   z-index: 1; }
+  @media only screen and (max-width: 56.25em) {
+    .testimonial {
+      width: 60rem; } }
+  @media only screen and (max-width: 37.5em) {
+    .testimonial {
+      width: 35rem; } }
   .testimonial::after {
     content: "\201D";
     position: absolute;
@@ -820,12 +877,27 @@ section {
     margin-top: -8rem;
     font-size: 17rem;
     font-family: Arial, Helvetica, sans-serif; }
+    @media only screen and (max-width: 56.25em) {
+      .testimonial::after {
+        margin-left: -5rem;
+        margin-top: -6rem;
+        font-size: 14rem; } }
+    @media only screen and (max-width: 37.5em) {
+      .testimonial::after {
+        content: ""; } }
   .testimonial__content {
     display: flex;
     flex-direction: column; }
   .testimonial__comment {
     font-size: 1.8rem;
     color: #fff; }
+    @media only screen and (max-width: 56.25em) {
+      .testimonial__comment {
+        text-align: center;
+        font-size: 1.7rem; } }
+    @media only screen and (max-width: 56.25em) {
+      .testimonial__comment {
+        text-align: justify; } }
   .testimonial__author {
     align-self: flex-end;
     padding: 5rem 2rem 0 0;
@@ -850,10 +922,24 @@ section {
   clear: both; }
   .row:not(:last-child) {
     margin-bottom: 3.2rem; }
+    @media only screen and (max-width: 56.25em) {
+      .row:not(:last-child) {
+        margin-bottom: 3rem; } }
+  @media only screen and (max-width: 56.25em) {
+    .row {
+      max-width: 50rem;
+      padding: 0 3rem; } }
   .row [class^="col-"] {
     float: left; }
     .row [class^="col-"]:not(:last-child) {
       margin-right: 3.2rem; }
+      @media only screen and (max-width: 56.25em) {
+        .row [class^="col-"]:not(:last-child) {
+          margin-right: 0;
+          margin-bottom: 3rem; } }
+    @media only screen and (max-width: 56.25em) {
+      .row [class^="col-"] {
+        width: 100% !important; } }
   .row .col-1-of-2 {
     width: calc((100% - 3.2rem) / 2); }
   .row .col-1-of-3 {
@@ -1018,6 +1104,9 @@ section {
       @media only screen and (max-width: 56.25em) {
         .hero__box--intro {
           margin: 0 auto; } }
+      @media only screen and (max-width: 37.5em) {
+        .hero__box--intro {
+          width: 80%; } }
     .hero__box--c2a {
       padding-top: 1rem; }
       .hero__box--c2a a {
@@ -1027,6 +1116,9 @@ section {
 
 .story {
   text-align: justify; }
+  @media only screen and (max-width: 56.25em) {
+    .story {
+      text-align: center; } }
   .story__box {
     padding: 3.2rem 6.4rem;
     background-color: #f6f6f6;
@@ -1036,6 +1128,9 @@ section {
     -moz-border-radius: 0.8rem;
     -ms-border-radius: 0.8rem;
     -o-border-radius: 0.8rem; }
+    @media only screen and (max-width: 37.5em) {
+      .story__box {
+        padding: 3.2rem 5.6rem; } }
     .story__box--intro h2 {
       color: #f68657; }
     .story__box--intro i {
@@ -1045,6 +1140,12 @@ section {
       display: block; }
     .story__box--text {
       line-height: 2; }
+      @media only screen and (max-width: 56.25em) {
+        .story__box--text {
+          font-size: 1.6rem; } }
+      @media only screen and (max-width: 37.5em) {
+        .story__box--text {
+          text-align: justify; } }
 
 .services__box {
   margin-top: 5rem;
@@ -1052,6 +1153,9 @@ section {
   padding: 10rem 1.6rem;
   background-position: center;
   background-size: contain; }
+  @media only screen and (max-width: 37.5em) {
+    .services__box {
+      padding: 7rem 1.6rem; } }
   .services__box--content {
     background: rgba(254, 254, 254, 0.8);
     padding: 5rem 2.8rem;
@@ -1071,6 +1175,15 @@ section {
     -moz-transition: all 0.3s ease-in-out;
     -ms-transition: all 0.3s ease-in-out;
     -o-transition: all 0.3s ease-in-out; }
+    @media only screen and (max-width: 56.25em) {
+      .services__box--content {
+        height: 25rem; } }
+    @media only screen and (max-width: 37.5em) {
+      .services__box--content {
+        height: 32rem; } }
+    @media only screen and (max-width: 25em) {
+      .services__box--content {
+        height: 35rem; } }
   .services__box--content:hover {
     cursor: default;
     transform: translateY(-1rem) scale(1.05);
@@ -1087,6 +1200,14 @@ section {
     padding-bottom: 1rem; }
   .services__box--text {
     text-align: justify; }
+    @media only screen and (max-width: 56.25em) {
+      .services__box--text {
+        text-align: center;
+        font-size: 1.6rem; } }
+    @media only screen and (max-width: 37.5em) {
+      .services__box--text {
+        text-align: justify;
+        font-size: 1.6rem; } }
 
 .stack {
   text-align: justify; }
@@ -1107,6 +1228,12 @@ section {
       -moz-transition: all 0.3s ease-in-out;
       -ms-transition: all 0.3s ease-in-out;
       -o-transition: all 0.3s ease-in-out; }
+      @media only screen and (max-width: 56.25em) {
+        .stack__box--content {
+          height: 16rem; } }
+      @media only screen and (max-width: 37.5em) {
+        .stack__box--content {
+          height: 18rem; } }
     .stack__box--content:hover {
       border-color: #f68657;
       cursor: default; }
@@ -1121,12 +1248,20 @@ section {
 
 .section-market-place {
   background-color: #faf9f9;
-  padding: 5rem 0 5rem 0; }
+  padding: 5rem 0; }
+  @media only screen and (max-width: 37.5em) {
+    .section-market-place {
+      padding: 2.5rem 0; } }
   .section-market-place .marketplace {
     display: flex;
     justify-content: space-around;
     max-width: 72rem;
     margin: 4rem auto; }
+    @media only screen and (max-width: 37.5em) {
+      .section-market-place .marketplace {
+        flex-direction: column;
+        align-items: center;
+        margin: 3rem auto; } }
     .section-market-place .marketplace a {
       display: block;
       height: 10rem; }
@@ -1140,6 +1275,11 @@ section {
       background-size: contain;
       border: 2px solid #e5e5e5;
       transition: border 0.3s ease-in-out; }
+      .section-market-place .marketplace__box:not(:last-child) {
+        margin-bottom: 0; }
+        @media only screen and (max-width: 37.5em) {
+          .section-market-place .marketplace__box:not(:last-child) {
+            margin-bottom: 2rem; } }
       .section-market-place .marketplace__box:hover {
         border: 2px solid #f68657; }
 
