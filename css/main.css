@@ -1165,6 +1165,13 @@ section {
     .story__box--intro i {
       color: #383a3f;
       font-size: 4rem; }
+    .story__box--intro #phn-sicon {
+      display: none; }
+    @media only screen and (max-width: 56.25em) {
+      .story__box--intro #phn-dicon {
+        display: none; }
+      .story__box--intro #phn-sicon {
+        display: block; } }
     .story__box--intro span {
       display: block; }
     .story__box--text {

@@ -105,6 +105,21 @@
       i {
         color: $dark-color;
         font-size: 4rem;
+        
+        
+      }
+
+      #phn-sicon{
+        display: none;
+      }
+
+      @include respond(tab-port){
+        #phn-dicon{
+          display: none;
+        }
+        #phn-sicon{
+          display: block;
+        }
       }
 
       span {

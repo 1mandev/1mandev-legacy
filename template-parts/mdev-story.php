@@ -4,7 +4,8 @@
       <div class="col-1-of-2">
         <div class="story__box--intro">
           <h2>A True <span>Story Indeed.</span></h2>
-          <p><i class="fa fa-arrow-circle-right md-anim-smallSlideRightLeft md-anim-infinity md-anim-delay md-anim-easeInOut"></i>
+          <p><i class="fa fa-arrow-circle-right md-anim-smallSlideRightLeft md-anim-infinity md-anim-delay md-anim-easeInOut"  id="phn-dicon"></i>
+          <i class="fa fa-arrow-circle-down md-anim-smallSlideDownUp md-anim-infinity md-anim-delay md-anim-easeInOut" id="phn-sicon"></i>
           </p>
         </div>
       </div>
