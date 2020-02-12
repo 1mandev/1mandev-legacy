@@ -1,4 +1,3 @@
-
 @keyframes slideInDown {
   0% {
     opacity: 0;
@@ -27,12 +26,11 @@
     -o-transform: translateY(0);
   }
 }
+
 .md-anim-slideInDown {
   animation: slideInDown 1s;
   -webkit-animation: slideInDown 1s;
 }
-
-
 
 @keyframes slideInUp {
   0% {
@@ -42,16 +40,16 @@
     -moz-transform: translateY(10rem);
     -ms-transform: translateY(10rem);
     -o-transform: translateY(10rem);
-}
+  }
 
   80% {
-    opacity: 1.8;
+    opacity: 1;
     transform: translateY(-2rem);
     -webkit-transform: translateY(-2rem);
     -moz-transform: translateY(-2rem);
     -ms-transform: translateY(-2rem);
     -o-transform: translateY(-2rem);
-}
+  }
 
   100% {
     opacity: 1;
@@ -62,9 +60,72 @@
     -o-transform: translateY(0);
   }
 }
+
 .md-anim-slideInUp {
   animation: slideInUp 1s;
   -webkit-animation: slideInUp 1s;
+}
+
+@keyframes smallSlideDownUp {
+  0% {
+    transform: translateY(0.5rem);
+    -webkit-transform: translateY(0.5rem);
+    -moz-transform: translateY(0.5rem);
+    -ms-transform: translateY(0.5rem);
+    -o-transform: translateY(0.5rem);
+  }
+
+  50% {
+    transform: translateY(-0.5rem);
+    -webkit-transform: translateY(-0.5rem);
+    -moz-transform: translateY(-0.5rem);
+    -ms-transform: translateY(-0.5rem);
+    -o-transform: translateY(-0.5rem);
+  }
+
+  100% {
+    transform: translateY(0);
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -o-transform: translateY(0);
+  }
+}
+
+.md-anim-smallSlideDownUp {
+  animation: smallSlideDownUp 1s;
+  -webkit-animation: smallSlideDownUp 1s;
+}
+
+@keyframes smallSlideRightLeft {
+  0% {
+    transform: translateX(0.5rem);
+    -webkit-transform: translateX(0.5rem);
+    -moz-transform: translateX(0.5rem);
+    -ms-transform: translateX(0.5rem);
+    -o-transform: translateX(0.5rem);
+  }
+
+  50% {
+    transform: translateX(-0.5rem);
+    -webkit-transform: translateX(-0.5rem);
+    -moz-transform: translateX(-0.5rem);
+    -ms-transform: translateX(-0.5rem);
+    -o-transform: translateX(-0.5rem);
+  }
+
+  100% {
+    transform: translateX(0);
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -o-transform: translateX(0);
+  }
+}
+
+.md-anim-smallSlideRightLeft {
+  animation: smallSlideRightLeft 1s;
+  -webkit-animation: smallSlideRightLeft 1s;
 }
 
 .md-anim-infinity {

@@ -1,56 +1,1130 @@
-  <!DOCTYPE html>
+
+<!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  
+
   <title>1ManDev | Battle Proven Developers at Services</title>
 
-
-  <!-- ========== Fonts ========== -->
-  <link href="assets/fonts/fonts.css" rel="stylesheet">
   <!-- ========== Icons ========== -->
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+    crossorigin="anonymous">
   <!-- ========== Main Stylesheet ========== -->
+  <link rel="stylesheet" href="./css/flickity.min.css">
   <link rel="stylesheet" href="css/main.css">
-  <link rel="stylesheet" href="css/media-quaries.css">
-  <link rel="stylesheet" href="css/md-animation.css">
 
 </head>
+
 <body>
-
-  <header class="header">
-    <h1 class="header__site-logo">
-      <a href="#"> 
-        <img src="assets/img/logo-white.png" alt="1ManDev Site Logo">
-      </a>
-    </h1>
-
-    <div class="header__hero-sec">
-      <div class="md-anim-slideInUp md-anim-easeInOut">
-          <h2 class="hero-sec__tagline">Battle Proven Developers at Service</h2>
-          <p class="hero-sec__intro">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iste fugit esse pariatur dolor reprehenderit. Repellendus praesentium possimus provident nobis quidem perspiciatis?</p>
-        
+  <header class="nav">
+    <div class="navigation">
+      <div class="navigation__button">
+        <button class="navigation__toggle"></button>
       </div>
-      <div class="hero-sec__c2a md-anim-slideInDown md-anim-easeInOut">
-        <a href="#" class="md__btn md__btn--light-pri">View Services</a>
-        <a href="#" class="md__btn md__btn--light-sec">Get Quootes</a>
-      </div>
+
+      <nav>
+        <ul class="menu">
+          <li data-text="Home">Home</li>
+          <li data-text="Projects">Projects</li>
+          <li ><a href="#pricing" data-text="About">Pricing</a></li>
+          <li data-text="Contact">Contact</li>
+        </ul>
+      </nav>
     </div>
 
+    <div class="nav__menu-bar">
+      <a href="#" class="md__btn md__btn--primary">Client Area</a>
+      <a href="get-started.html" class="md__btn md__btn--secondary">Get Started</a>
+
+    </div>
   </header>
 
   <main>
+    <!-- Hero Box-->
+    <section class="hero">
+      <h1 class="hero__site-logo">
+        <a href="#">
+          <img src="assets/img/logo-white.png" alt="1ManDev Site Logo">
+        </a>
+      </h1>
 
+      <div class="hero__box">
+        <div class="md-anim-slideInUp md-anim-easeInOut">
+          <h2 class="hero__box--tagline">Battle Proven Developers at Service</h2>
+          <p class="hero__box--intro">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iste fugit esse
+            pariatur dolor reprehenderit. Repellendus praesentium possimus provident nobis quidem perspiciatis?</p>
+
+        </div>
+        <div class="hero__box--c2a md-anim-slideInDown md-anim-easeInOut">
+          <a href="#" class="md__btn md__btn--dark">View Services</a>
+          <a href="#" class="md__btn md__btn--light-pri">Get Started</a>
+        </div>
+        <div class="hero__img">
+          <img src="assets/img/hero.png" alt="" srcset="">
+        </div>
+      </div>
+    </section>
+
+    <!-- Story Section -->
+    <section class="story">
+      <div class="content-box">
+        <div class="story__box row">
+          <div class="col-1-of-2">
+            <div class="story__box--intro">
+              <h2>A True <span>Story Indeed.</span></h2>
+              <p><i class="fas fa-arrow-circle-right md-anim-smallSlideRightLeft md-anim-infinity md-anim-delay md-anim-easeInOut fa-rotate-90"></i>
+              </p>
+            </div>
+          </div>
+          <div class="col-1-of-2">
+            <p class="story__box--text">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nostrum, dignissimos, at commodi nulla
+              ducimus
+              ipsa voluptatibus beatae atque id fuga minus perferendis molestiae pariatur voluptatem? Asperiores
+              omnis
+              rerum ipsa sunt. Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus autem pariatur,
+              culpa dolorem voluptatem, laboriosam similique numquam eaque saepe magnam dolore facere officia minus
+              esse vitae incidunt error ab itaque.
+            </p>
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- Services Section -->
+    <section class="services" id="services-sec">
+      <div class="section__box">
+        <h2 class="section__box--intro">Services &mdash; We Offer</h2>
+        <i class="section__box--icon md-anim-smallSlideDownUp md-anim-infinity md-anim-delay md-anim-easeInOut fa fa-arrow-circle-down"></i>
+        <p class="section__box--text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem tempora tempore
+          quos maiores totam. Possimus laboriosam quo, quis fugiat omnis dolore tempora accusantium error, earum
+          repellendus officiis minus non veritatis.</p>
+      </div>
+
+      <div class="services__box">
+        <div class="content-box">
+          <div class="row">
+            <div class="col-1-of-4">
+              <div class="services__box--content">
+
+                <img class="sec_iconimg" src="assets/icon/ui-ux.svg" alt="">
+
+                <h2 class="services__box--intro">
+                  UI/ UX Design
+                </h2>
+                <p class="services__box--text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis
+                  repellendus minus aperiam, inventore quas quam iusto ab! Expedita aliquid esse dicta quod molestias,
+                  quibusdam ipsam consectetur inventore placeat ipsa obcaecati?</p>
+              </div>
+            </div>
+
+            <div class="col-1-of-4">
+              <div class="services__box--content">
+
+                <img class="sec_iconimg" src="assets/icon/wordpress-logo.svg" alt="">
+
+                <h2 class="services__box--intro">
+                  WordPress Development
+                </h2>
+                <p class="services__box--text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis
+                  repellendus minus aperiam, inventore quas quam iusto ab! Expedita aliquid esse dicta quod molestias,
+                  quibusdam ipsam consectetur inventore placeat ipsa obcaecati?</p>
+              </div>
+            </div>
+
+
+            <div class="col-1-of-4">
+              <div class="services__box--content">
+                <img class="sec_iconimg" src="assets/icon/ecommerce-development.svg" alt="">
+                <h2 class="services__box--intro">
+                  E-commerce Development
+                </h2>
+                <p class="services__box--text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis
+                  repellendus minus aperiam, inventore quas quam iusto ab! Expedita aliquid esse dicta quod molestias,
+                  quibusdam ipsam consectetur inventore placeat ipsa obcaecati?</p>
+              </div>
+            </div>
+
+            <div class="col-1-of-4">
+              <div class="services__box--content">
+                <img class="sec_iconimg" src="assets/icon/web-devleopment.svg" alt="">
+                <h2 class="services__box--intro">
+                  Web App Development
+                </h2>
+                <p class="services__box--text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis
+                  repellendus minus aperiam, inventore quas quam iusto ab! Expedita aliquid esse dicta quod molestias,
+                  quibusdam ipsam consectetur inventore placeat ipsa obcaecati?</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </section>
+
+    <section class="stack">
+      <div class="section__box">
+        <h2 class="section__box--intro">Stack &mdash; We Prefer</h2>
+        <i class="section__box--icon md-anim-smallSlideDownUp md-anim-infinity md-anim-delay md-anim-easeInOut fa fa-arrow-circle-down"></i>
+        <p class="section__box--text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem tempora tempore
+          quos maiores totam. Possimus laboriosam quo, quis fugiat omnis dolore tempora accusantium error, earum
+          repellendus officiis minus non veritatis.</p>
+      </div>
+
+      <div class="stack__box">
+        <div class="content-box">
+          <div class="row">
+            <div class="col-1-of-3">
+              <div class="stack__box--content">
+                <img class="stack__box--icon" src="assets/img/logo-dark.png" alt="">
+                <h4 class="stack__box--intro">HTML</h4>
+                <p class="stack__box--text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum
+                  accusantium
+                  iure unde temporibus, exercitationem magni fugiat perspiciatis maiores.</p>
+              </div>
+            </div>
+            <div class="col-1-of-3">
+              <div class="stack__box--content">
+                <img class="stack__box--icon" src="assets/img/logo-dark.png" alt="">
+                <h4 class="stack__box--intro">HTML</h4>
+                <p class="stack__box--text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum
+                  accusantium
+                  iure unde temporibus, exercitationem magni fugiat perspiciatis maiores.</p>
+              </div>
+            </div>
+
+            <div class="col-1-of-3">
+              <div class="stack__box--content">
+                <img class="stack__box--icon" src="assets/img/logo-dark.png" alt="">
+                <h4 class="stack__box--intro">HTML</h4>
+                <p class="stack__box--text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum
+                  accusantium
+                  iure unde temporibus, exercitationem magni fugiat perspiciatis maiores.</p>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-1-of-3">
+              <div class="stack__box--content">
+                <img class="stack__box--icon" src="assets/img/logo-dark.png" alt="">
+                <h4 class="stack__box--intro">HTML</h4>
+                <p class="stack__box--text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum
+                  accusantium
+                  iure unde temporibus, exercitationem magni fugiat perspiciatis maiores.</p>
+              </div>
+            </div>
+            <div class="col-1-of-3">
+              <div class="stack__box--content">
+                <img class="stack__box--icon" src="assets/img/logo-dark.png" alt="">
+                <h4 class="stack__box--intro">HTML</h4>
+                <p class="stack__box--text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum
+                  accusantium
+                  iure unde temporibus, exercitationem magni fugiat perspiciatis maiores.</p>
+              </div>
+            </div>
+            <div class="col-1-of-3">
+              <div class="stack__box--content">
+                <img class="stack__box--icon" src="assets/img/logo-dark.png" alt="">
+                <h4 class="stack__box--intro">HTML</h4>
+                <p class="stack__box--text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum
+                  accusantium
+                  iure unde temporibus, exercitationem magni fugiat perspiciatis maiores.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end of stack -->
+
+    <section id="pricing" class="section-pricing">
+      <div class="section__box">
+        <h2 class="section__box--intro">Price &mdash; Best Valued Ever</h2>
+        <i
+          class="section__box--icon md-anim-smallSlideDownUp md-anim-infinity md-anim-delay md-anim-easeInOut fa fa-arrow-circle-down"></i>
+        <p class="section__box--text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem tempora tempore
+          quos maiores totam. Possimus laboriosam quo, quis fugiat omnis dolore tempora accusantium error, earum
+          repellendus officiis minus non veritatis.</p>
+      </div>
+
+      <div class="row">
+        <div class="col-1-of-4">
+          <div class="card">
+            <div class="card__heading">
+              <h5>Just Begin</h5>
+            </div>
+            <div class="card__price-box">
+              <div class="card__price-text">Starting at</div>
+              <div class="card__price-value">
+                <span class="card__price-value--dollar">$</span>
+                <span class="card__price-value--money">99</span>
+              </div>
+            </div>
+
+            <div class="card__details">
+              <ul>
+                <li>upto 3 pages</li>
+                <li>mobile responsive</li>
+                <li>carefully designed</li>
+                <li>3 days fast delivery</li>
+                <li>deploy support</li>
+                <li>good for personal portfolio and landing page</li>
+              </ul>
+            </div>
+
+            <div class="card__contact">
+              <a href="#" class="md__btn md__btn--secondary">Conatct Now</a>
+            </div>
+          </div>
+          <!-- End of Card -->
+        </div>
+        <!-- end of col-1-of-4 -->
+
+        <div class="col-1-of-4">
+          <div class="card">
+            <div class="card__heading">
+              <h5>Small Businesses</h5>
+            </div>
+            <div class="card__price-box">
+              <div class="card__price-text">Starting at</div>
+              <div class="card__price-value">
+                <span class="card__price-value--dollar">$</span>
+                <span class="card__price-value--money">189</span>
+              </div>
+            </div>
+
+            <div class="card__details">
+              <ul>
+                <li>upto 3 pages</li>
+                <li>mobile responsive</li>
+                <li>carefully designed</li>
+                <li>3 days fast delivery</li>
+                <li>deploy support</li>
+                <li>good for personal portfolio and landing page</li>
+              </ul>
+            </div>
+
+            <div class="card__contact">
+              <a href="#" class="md__btn md__btn--secondary">Conatct Now</a>
+            </div>
+          </div>
+        </div>
+        <!-- end of col-1-of-4 -->
+
+        <div class="col-1-of-4">
+          <div class="card" id="card-special">
+            <div class="card__heading card__heading--dark">
+              <h5>Growth Hack</h5>
+            </div>
+            <div class="card__price-box">
+              <div class="card__price-text">Starting at</div>
+              <div class="card__price-value">
+                <span class="card__price-value--dollar">$</span>
+                <span class="card__price-value--money">259</span>
+              </div>
+            </div>
+
+            <div class="card__details">
+              <ul>
+                <li>upto 3 pages</li>
+                <li>mobile responsive</li>
+                <li>carefully designed</li>
+                <li>3 days fast delivery</li>
+                <li>deploy support</li>
+                <li>good for personal portfolio and landing page</li>
+              </ul>
+            </div>
+
+            <div class="card__contact">
+              <a href="#" class="md__btn md__btn--dark">Conatct Now</a>
+            </div>
+          </div>
+        </div>
+        <!-- end of col-1-of-4 -->
+
+        <div class="col-1-of-4">
+          <div class="card">
+            <div class="card__heading card__heading--small">
+              <h6>Disruptive Development</h6>
+            </div>
+            <div class="card__price-box">
+              <div class="card__price-text">Starting at</div>
+              <div class="card__price-value">
+                <span class="card__price-value--dollar">$</span><span class="card__price-value--money">599</span>
+              </div>
+            </div>
+
+            <div class="card__details">
+              <ul>
+                <li>upto 3 pages</li>
+                <li>mobile responsive</li>
+                <li>carefully designed</li>
+                <li>3 days fast delivery</li>
+                <li>deploy support</li>
+                <li>good for personal portfolio and landing page</li>
+              </ul>
+            </div>
+
+            <div class="card__contact">
+              <a href="#" class="md__btn md__btn--secondary">Conatct Now</a>
+            </div>
+          </div>
+        </div>
+        <!-- end of col-1-of-4 -->
+      </div>
+      <!-- end of row -->
+    </section>
+    <!-- end of pricing -->
+
+    <section class="section-market-place">
+      <div class="section__box">
+        <h2 class="section__box--intro">On Your Favourite MarketPlace</h2>
+        <i class="section__box--icon md-anim-smallSlideDownUp md-anim-infinity md-anim-delay md-anim-easeInOut fa fa-arrow-circle-down"></i>
+        <p class="section__box--text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem tempora tempore
+          quos maiores totam. Possimus laboriosam quo, quis fugiat omnis dolore tempora accusantium error, earum
+          repellendus officiis minus non veritatis.</p>
+      </div>
+
+      <div class="content-box">
+        <div class="marketplace">
+          <div class="marketplace__box" style="background-image: url('/assets/img/upwork.png');">
+            <a href=""></a>
+          </div>
+          <div class="marketplace__box" style="background-image: url('/assets/img/fiverr.jpg');">
+            <a href=""></a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end of marketplace -->
+
+    <section class="section-why">
+      <div class="section__box">
+        <h2 class="section__box--intro">Why &mdash; we are the best</h2>
+        <i
+          class="section__box--icon md-anim-smallSlideDownUp md-anim-infinity md-anim-delay md-anim-easeInOut fa fa-arrow-circle-down"></i>
+        <p class="section__box--text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem tempora tempore
+          quos maiores totam. Possimus laboriosam quo, quis fugiat omnis dolore tempora accusantium error, earum
+          repellendus officiis minus non veritatis.</p>
+      </div>
+
+      <div class="credential">
+        <div class="credential__list">
+          <div class="credential__item">
+            <div class="credential__elem">
+              <div class="credential__elem--number">01</div>
+              <div>
+                <svg class="credential__elem--icon">
+                  <use xlink:href="./assets/icon/sprite2.svg#icon-web-design"></use>
+                </svg>
+              </div>
+            </div>
+            <!-- end of credential-elem -->
+            <div class="credential__text">
+              <h3>700+</h3>
+              <p>implementation</p>
+            </div>
+          </div>
+
+          <div class="credential__item">
+            <div class="credential__elem">
+              <div class="credential__elem--number">02</div>
+              <div>
+                <svg class="credential__elem--icon">
+                  <use xlink:href="./assets/icon/sprite2.svg#icon-customer-review"></use>
+                </svg>
+              </div>
+            </div>
+            <!-- end of credential-elem -->
+            <div class="credential__text">
+              <h3>700+</h3>
+              <p>implementation</p>
+            </div>
+          </div>
+
+          <div class="credential__item">
+            <div class="credential__elem">
+              <div class="credential__elem--number">03</div>
+              <div>
+                <svg class="credential__elem--icon">
+                  <use xlink:href="./assets/icon/sprite2.svg#icon-security"></use>
+                </svg>
+              </div>
+            </div>
+            <!-- end of credential-elem -->
+            <div class="credential__text">
+              <h3>700+</h3>
+              <p>implementation</p>
+            </div>
+          </div>
+
+          <div class="credential__item">
+            <div class="credential__elem">
+              <div class="credential__elem--number">04</div>
+              <div>
+                <svg class="credential__elem--icon">
+                  <use xlink:href="./assets/icon/sprite2.svg#icon-idea"></use>
+                </svg>
+              </div>
+            </div>
+            <!-- end of credential-elem -->
+            <div class="credential__text">
+              <h3>700+</h3>
+              <p>implementation</p>
+            </div>
+          </div>
+
+          <div class="credential__item">
+            <div class="credential__elem">
+              <div class="credential__elem--number">05</div>
+              <div>
+                <svg class="credential__elem--icon">
+                  <use xlink:href="./assets/icon/sprite2.svg#icon-schedule"></use>
+                </svg>
+              </div>
+            </div>
+            <!-- end of credential-elem -->
+            <div class="credential__text">
+              <h3>700+</h3>
+              <p>implementation</p>
+
+            </div>
+          </div>
+
+          <div class="credential__item">
+            <div class="credential__elem">
+              <div class="credential__elem--number">06</div>
+              <div>
+                <svg class="credential__elem--icon">
+                  <use xlink:href="./assets/icon/sprite2.svg#icon-support"></use>
+                </svg>
+              </div>
+            </div>
+            <!-- end of credential-elem -->
+            <div class="credential__text">
+              <h3>700+</h3>
+              <p>implementation</p>
+            </div>
+          </div>
+        </div>
+        <!-- end of credential-list1 -->
+      </div>
+    </section>
+    <!-- end of section-why -->
+
+    <section class="section-portfolio">
+      <div class="section__box">
+        <h2 class="section__box--intro">portfolio &mdash; made with love</h2>
+        <i
+          class="section__box--icon md-anim-smallSlideDownUp md-anim-infinity md-anim-delay md-anim-easeInOut fa fa-arrow-circle-down"></i>
+        <p class="section__box--text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem tempora tempore
+          quos maiores totam. Possimus laboriosam quo, quis fugiat omnis dolore tempora accusantium error, earum
+          repellendus officiis minus non veritatis.</p>
+      </div>
+
+      <div class="portfolio-carousel">
+        <div class="portfolio-wrapper">
+          <div class="portfolio">
+            <div class="portfolio__content">
+              <figure class="portfolio__gallery">
+                <img src="./assets/img/portfolio_avss.png" alt="portfolio image" class="portfolio__photo">
+              </figure>
+
+              <div class="portfolio__description">
+                <div class="portfolio__description--main">
+                  <a href="#">avss.io</a>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit repellat ex nisi praesentium cupiditate error quo asperiores repudiandae, sunt at quasi in eaque recusandae debitis facere qui veniam voluptate facilis, suscipit similique doloremque fuga. Exercitationem inventore aspernatur corporis sit maxime!
+                  </p>
+                </div>
+
+                <div class="portfolio__description--stack">
+                  <h4>stack used</h4>
+                  <span>html</span>
+                  <span>css</span>
+                  <span>sass</span>
+                  <span>js</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="portfolio__info">
+              <div class="portfolio__info--topic">
+                <div class="portfolio__info--icon-wrapper">
+                  <svg class="portfolio__info--icon">
+                    <use xlink:href="./assets/icon/sprite.svg#icon-ionicons_svg_md-time"></use>
+                  </svg>
+                </div>
+                <div class="portfolio__info--text">
+                  <h4>Est. Time</h4>
+                  <p>4 Days</p>
+                </div>
+              </div>
+
+              <div class="portfolio__info--topic">
+                <div class="portfolio__info--icon-wrapper">
+                  <svg class="portfolio__info--icon">
+                    <use xlink:href="./assets/icon/sprite.svg#icon-ionicons_svg_md-card"></use>
+                  </svg>
+                </div>
+                <div class="portfolio__info--text">
+                  <h4>Est. Time</h4>
+                  <p>$ 500</p>
+                </div>
+              </div>
+
+              <div class="portfolio__info--topic">
+                <div class="portfolio__info--icon-wrapper">
+                  <svg class="portfolio__info--icon">
+                    <use xlink:href="./assets/icon/sprite.svg#icon-heart-outlined"></use>
+                  </svg>
+                </div>
+                <div class="portfolio__info--text">
+                  <h4>Est. Time</h4>
+                  <p>4.5 / 5</p>
+                </div>
+              </div>
+
+              <div class="portfolio__info--topic">
+                <div class="portfolio__info--icon-wrapper">
+                  <a href="http://avss.io/" target="_blank">
+                    <svg class="portfolio__info--icon">
+                      <use xlink:href="./assets/icon/sprite.svg#icon-external-link-symbol"></use>
+                    </svg>
+                  </a>
+                </div>
+                <div class="portfolio__info--text">
+                  <a href="http://avss.io/" target="_blank">visit website</a>
+                </div>
+              </div>
+            </div>
+            <!-- end of portfolio info -->
+          </div>
+          <!-- end of portfolio -->
+        </div>
+        <!-- end of portfolio-wrapper -->
+
+        <div class="portfolio-wrapper">
+          <div class="portfolio">
+            <div class="portfolio__content">
+              <figure class="portfolio__gallery">
+                <img src="./assets/img/portfolio_avss.png" alt="portfolio image" class="portfolio__photo">
+              </figure>
+
+              <div class="portfolio__description">
+                <div class="portfolio__description--main">
+                  <a href="#">avss.io</a>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit repellat ex nisi praesentium cupiditate error quo asperiores repudiandae, sunt at quasi in eaque recusandae debitis facere qui veniam voluptate facilis, suscipit similique doloremque fuga. Exercitationem inventore aspernatur corporis sit maxime!
+                  </p>
+                </div>
+
+                <div class="portfolio__description--stack">
+                  <h4>stack used</h4>
+                  <span>html</span>
+                  <span>css</span>
+                  <span>sass</span>
+                  <span>js</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="portfolio__info">
+              <div class="portfolio__info--topic">
+                <div class="portfolio__info--icon-wrapper">
+                  <svg class="portfolio__info--icon">
+                    <use xlink:href="./assets/icon/sprite.svg#icon-ionicons_svg_md-time"></use>
+                  </svg>
+                </div>
+                <div class="portfolio__info--text">
+                  <h4>Est. Time</h4>
+                  <p>4 Days</p>
+                </div>
+              </div>
+
+              <div class="portfolio__info--topic">
+                <div class="portfolio__info--icon-wrapper">
+                  <svg class="portfolio__info--icon">
+                    <use xlink:href="./assets/icon/sprite.svg#icon-ionicons_svg_md-card"></use>
+                  </svg>
+                </div>
+                <div class="portfolio__info--text">
+                  <h4>Est. Time</h4>
+                  <p>$ 500</p>
+                </div>
+              </div>
+
+              <div class="portfolio__info--topic">
+                <div class="portfolio__info--icon-wrapper">
+                  <svg class="portfolio__info--icon">
+                    <use xlink:href="./assets/icon/sprite.svg#icon-heart-outlined"></use>
+                  </svg>
+                </div>
+                <div class="portfolio__info--text">
+                  <h4>Est. Time</h4>
+                  <p>4.5 / 5</p>
+                </div>
+              </div>
+
+              <div class="portfolio__info--topic">
+                <div class="portfolio__info--icon-wrapper">
+                  <a href="http://avss.io/" target="_blank">
+                    <svg class="portfolio__info--icon">
+                      <use xlink:href="./assets/icon/sprite.svg#icon-external-link-symbol"></use>
+                    </svg>
+                  </a>
+                </div>
+                <div class="portfolio__info--text">
+                  <a href="http://avss.io/" target="_blank">visit website</a>
+                </div>
+              </div>
+            </div>
+            <!-- end of portfolio info -->
+          </div>
+          <!-- end of portfolio -->
+        </div>
+        <!-- end of portfolio-wrapper -->
+
+        <div class="portfolio-wrapper">
+          <div class="portfolio">
+            <div class="portfolio__content">
+              <figure class="portfolio__gallery">
+                <img src="./assets/img/portfolio_avss.png" alt="portfolio image" class="portfolio__photo">
+              </figure>
+
+              <div class="portfolio__description">
+                <div class="portfolio__description--main">
+                  <a href="#">avss.io</a>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit repellat ex nisi praesentium cupiditate error quo asperiores repudiandae, sunt at quasi in eaque recusandae debitis facere qui veniam voluptate facilis, suscipit similique doloremque fuga. Exercitationem inventore aspernatur corporis sit maxime!
+                  </p>
+                </div>
+
+                <div class="portfolio__description--stack">
+                  <h4>stack used</h4>
+                  <span>html</span>
+                  <span>css</span>
+                  <span>sass</span>
+                  <span>js</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="portfolio__info">
+              <div class="portfolio__info--topic">
+                <div class="portfolio__info--icon-wrapper">
+                  <svg class="portfolio__info--icon">
+                    <use xlink:href="./assets/icon/sprite.svg#icon-ionicons_svg_md-time"></use>
+                  </svg>
+                </div>
+                <div class="portfolio__info--text">
+                  <h4>Est. Time</h4>
+                  <p>4 Days</p>
+                </div>
+              </div>
+
+              <div class="portfolio__info--topic">
+                <div class="portfolio__info--icon-wrapper">
+                  <svg class="portfolio__info--icon">
+                    <use xlink:href="./assets/icon/sprite.svg#icon-ionicons_svg_md-card"></use>
+                  </svg>
+                </div>
+                <div class="portfolio__info--text">
+                  <h4>Est. Time</h4>
+                  <p>$ 500</p>
+                </div>
+              </div>
+
+              <div class="portfolio__info--topic">
+                <div class="portfolio__info--icon-wrapper">
+                  <svg class="portfolio__info--icon">
+                    <use xlink:href="./assets/icon/sprite.svg#icon-heart-outlined"></use>
+                  </svg>
+                </div>
+                <div class="portfolio__info--text">
+                  <h4>Est. Time</h4>
+                  <p>4.5 / 5</p>
+                </div>
+              </div>
+
+              <div class="portfolio__info--topic">
+                <div class="portfolio__info--icon-wrapper">
+                  <a href="http://avss.io/" target="_blank">
+                    <svg class="portfolio__info--icon">
+                      <use xlink:href="./assets/icon/sprite.svg#icon-external-link-symbol"></use>
+                    </svg>
+                  </a>
+                </div>
+                <div class="portfolio__info--text">
+                  <a href="http://avss.io/" target="_blank">visit website</a>
+                </div>
+              </div>
+            </div>
+            <!-- end of portfolio info -->
+          </div>
+          <!-- end of portfolio -->
+        </div>
+        <!-- end of portfolio-wrapper -->
+      </div>
+      <!-- end of portfolio-carousel -->
+    </section>
+
+    <section class="section-testimonials">
+      <div class="section__box">
+        <h2 class="section__box--intro">Testimonials &mdash; What People say</h2>
+        <i class="section__box--icon md-anim-smallSlideDownUp md-anim-infinity md-anim-delay md-anim-easeInOut fa fa-arrow-circle-down"></i>
+        <p class="section__box--text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem tempora tempore
+          quos maiores totam. Possimus laboriosam quo, quis fugiat omnis dolore tempora accusantium error, earum
+          repellendus officiis minus non veritatis.</p>
+      </div>
+
+      <div class="testimonial-carousel">
+        <div class="testimonial-wrapper">
+          <div class="testimonial">
+            <div class="testimonial__content">
+              <div class="testimonial__comment">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Praesentium incidunt qui, adipisci numquam autem illum corrupti nostrum quidem tenetur id eaque facilis fugit amet debitis officiis consequuntur consequatur officia exercitationem? Commodi fuga iure repudiandae repellendus quis delectus explicabo atque voluptate!
+              </div>
+              <div class="testimonial__author">
+                <img src="./assets/img/testimonial-character.jpg" alt="Author image">
+                <div class="testimonial__author--detail">
+                  <h2>Ahmad Jaber</h2>
+                  <p>cf0, 1Mandev.com</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- end of testimonial-wrapper -->
+
+        <div class="testimonial-wrapper">
+          <div class="testimonial">
+            <div class="testimonial__content">
+              <div class="testimonial__comment">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Praesentium incidunt qui, adipisci numquam autem illum corrupti nostrum quidem tenetur id eaque facilis fugit amet debitis officiis consequuntur consequatur officia exercitationem? Commodi fuga iure repudiandae repellendus quis delectus explicabo atque voluptate!
+              </div>
+              <div class="testimonial__author">
+                <img src="./assets/img/testimonial-character.jpg" alt="Author image">
+                <div class="testimonial__author--detail">
+                  <h2>Ahmad Jaber</h2>
+                  <p>cf0, 1Mandev.com</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- end of testimonial-wrapper -->
+
+        <div class="testimonial-wrapper">
+          <div class="testimonial">
+            <div class="testimonial__content">
+              <div class="testimonial__comment">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Praesentium incidunt qui, adipisci numquam autem illum corrupti nostrum quidem tenetur id eaque facilis fugit amet debitis officiis consequuntur consequatur officia exercitationem? Commodi fuga iure repudiandae repellendus quis delectus explicabo atque voluptate!
+              </div>
+              <div class="testimonial__author">
+                <img src="./assets/img/testimonial-character.jpg" alt="Author image">
+                <div class="testimonial__author--detail">
+                  <h2>Ahmad Jaber</h2>
+                  <p>cf0, 1Mandev.com</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- end of testimonial-wrapper -->
+      </div>
+      <!-- end of testimonial-carousel -->
+    </section>
+    <!-- end of section-testimonials -->
+
+    <section class="section-contact">
+      <div class="section__box">
+        <h2 class="section__box--intro">Contact us &mdash; Let's Talk About The Project</h2>
+        <i class="section__box--icon md-anim-smallSlideDownUp md-anim-infinity md-anim-delay md-anim-easeInOut fa fa-arrow-circle-down"></i>
+        <p class="section__box--text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem tempora tempore
+          quos maiores totam. Possimus laboriosam quo, quis fugiat omnis dolore tempora accusantium error, earum
+          repellendus officiis minus non veritatis.</p>
+      </div>
+
+      <!-- <div class="contact">
+        <form action="#" class="contact__form">
+          <div class="contact__field">
+            <div class="contact__field--wrapper">
+              <input type="text" name="name" id="name" class="contact__field--input" placeholder="Full Name (Required)">
+            </div>
+            <div class="contact__field--wrapper">
+              <input type="email" name="email" id="email" class="contact__field--input" placeholder="Email Address (Required)">
+            </div>
+          </div>
+          <div class="contact__field">
+            <div class="contact__field--wrapper">
+              <input type="text" name="number" id="number" class="contact__field--input" placeholder="Phone Number">
+            </div>
+            <div class="contact__field--wrapper">
+              <select name="project" id="project" class="contact__field--select">
+                <option value="">Select Project Type</option>
+                <option value="project1">JUST BEGIN (STARTING AT - $ 99)</option>
+                <option value="project2">SMALL BUSINESSES (STARTING AT - $189)</option>
+                <option value="project3">GROWTH HACK (STARTING AT - $259)</option>
+                <option value="project4">DISRUPTIVE DEVELOPMENT (STARTING AT - $599)</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="contact__text">
+            <div class="contact__text--wrapper">
+              <textarea name="brief" id="brief" cols="30" rows="7" class="contact__text--area" placeholder="Project Brief (Required)"></textarea>
+            </div>
+          </div>
+
+          <div class="contact__submit">
+            <a href="#" class="md__btn md__btn--primary">Contact Now</a>
+          </div>
+        </form>
+      </div> -->
+
+      <div role="form" class="wpcf7" id="wpcf7-f6-p1-o1" lang="en-US" dir="ltr">
+          <div class="screen-reader-response"></div>
+          <form
+            action="/2019/07/09/hello-world/?preview_id=1&#038;preview_nonce=224ae9d580&#038;preview=true#wpcf7-f6-p1-o1"
+            method="post"
+            class="wpcf7-form"
+            novalidate="novalidate"
+          >
+            <div style="display: none;">
+              <input type="hidden" name="_wpcf7" value="6" />
+              <input type="hidden" name="_wpcf7_version" value="5.1.3" />
+              <input type="hidden" name="_wpcf7_locale" value="en_US" />
+              <input type="hidden" name="_wpcf7_unit_tag" value="wpcf7-f6-p1-o1" />
+              <input type="hidden" name="_wpcf7_container_post" value="1" />
+            </div>
+            <div class="contact__field">
+              <div class="contact__field--wrapper">
+                <span class="wpcf7-form-control-wrap fullname"
+                  ><input
+                    type="text"
+                    name="fullname"
+                    value=""
+                    size="40"
+                    class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required contact__field--input"
+                    id="fullname"
+                    aria-required="true"
+                    aria-invalid="false"
+                    placeholder="Full Name (Required)"
+                /></span>
+              </div>
+              <div class="contact__field--wrapper">
+                <span class="wpcf7-form-control-wrap email"
+                  ><input
+                    type="email"
+                    name="email"
+                    value=""
+                    size="40"
+                    class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email contact__field--input"
+                    id="email"
+                    aria-required="true"
+                    aria-invalid="false"
+                    placeholder="Full Name (Required)"
+                /></span>
+              </div>
+            </div>
+            <div class="contact__field">
+              <div class="contact__field--wrapper">
+                <span class="wpcf7-form-control-wrap phonenum"
+                  ><input
+                    type="tel"
+                    name="phonenum"
+                    value=""
+                    size="40"
+                    class="wpcf7-form-control wpcf7-text wpcf7-tel wpcf7-validates-as-required wpcf7-validates-as-tel contact__field--input"
+                    id="phonenum"
+                    aria-required="true"
+                    aria-invalid="false"
+                    placeholder="Phone Number (Required)"
+                /></span>
+              </div>
+              <div class="contact__field--wrapper">
+                <span class="wpcf7-form-control-wrap projects"
+                  ><select
+                    name="projects"
+                    class="wpcf7-form-control wpcf7-select wpcf7-validates-as-required contact__field--select"
+                    id="projects"
+                    aria-required="true"
+                    aria-invalid="false"
+                    ><option value="">---</option
+                    ><option value="JUST BEGIN (STARTING AT - $ 99)"
+                      >JUST BEGIN (STARTING AT - $ 99)</option
+                    ><option value="SMALL BUSINESSES (STARTING AT - $189)"
+                      >SMALL BUSINESSES (STARTING AT - $189)</option
+                    ><option value="GROWTH HACK (STARTING AT - $259)"
+                      >GROWTH HACK (STARTING AT - $259)</option
+                    ><option value="DISRUPTIVE DEVELOPMENT (STARTING AT - $599)"
+                      >DISRUPTIVE DEVELOPMENT (STARTING AT - $599)</option
+                    ><option value="OTHER (I WANT TO DISCUSS FIRST)"
+                      >OTHER (I WANT TO DISCUSS FIRST)</option
+                    ></select
+                  ></span
+                >
+              </div>
+            </div>
+            <div class="contact__text">
+              <div class="contact__text--wrapper">
+                <span class="wpcf7-form-control-wrap brief"
+                  ><textarea
+                    name="brief"
+                    cols="40"
+                    rows="10"
+                    class="wpcf7-form-control wpcf7-textarea wpcf7-validates-as-required contact__text--area"
+                    id="brief"
+                    aria-required="true"
+                    aria-invalid="false"
+                    placeholder="Project Description(Required)"
+                  ></textarea
+                ></span>
+              </div>
+            </div>
+            <div class="contact__submit">
+              <input
+                type="submit"
+                value="Let's Discuss"
+                class="wpcf7-form-control wpcf7-submit md__btn md__btn--primary"
+                id="df"
+              />
+            </div>
+            <div class="wpcf7-response-output wpcf7-display-none"></div>
+          </form>
+        </div>
+
+      <div class="source">
+        <a href="tel:+8801722893129" class="source__item">
+          <div>
+            <svg class="source__item--icon">
+              <use xlink:href="./assets/icon/sprite.svg#icon-ionicons_svg_md-call"></use>
+            </svg>
+          </div>
+
+          <div class="source__item--info">
+            <p>call now</p>
+            <h4>+880 1722 893129</h4>
+          </div>
+        </a>
+
+        <a href="mailto:contact@1mandev.com" class="source__item">
+          <div>
+            <svg class="source__item--icon">
+              <use xlink:href="./assets/icon/sprite.svg#icon-ionicons_svg_md-mail"></use>
+            </svg>
+          </div>
+
+          <div class="source__item--info">
+            <p>email us</p>
+            <h4 class="small">contact@1mandev.com</h4>
+          </div>
+        </a>
+
+        <a href="callto:1mandev.com" class="source__item">
+          <div>
+            <svg class="source__item--icon">
+              <use xlink:href="./assets/icon/sprite.svg#icon-skype"></use>
+            </svg>
+          </div>
+
+          <div class="source__item--info">
+            <p>skype</p>
+            <h4>1mandev</h4>
+          </div>
+        </a>
+      </div>
+      <!-- end of source -->
+    </section>
+    <!-- ecd of section-contact -->
   </main>
-  
-  <footer>
 
+  <footer class="footer">
+    <div class="footer__box">
+      <div class="footer__box--about">
+        <div class="fabout__image">
+          <img src="/assets/img/logo-colordark.png" alt="Site Footer Logo">
+        </div>
+        <div class="fabout__info">
+          <h3 class="fabout__info--title">1MANDEV.COM</h3>
+          <p class="fabout__info--details">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam magnam qui, facilis praesentium sed tempora quaerat veniam? Architecto pariatur accusantium unde dicta obcaecati. Possimus, laudantium omnis debitis molestias porro quas!</p>
+        </div>
+
+      </div>
+      <div class="footer__box--menu-1">
+        <ul class="fmenu">
+          <li><a href="#">Serives</a></li>
+          <li><a href="#">Pricing</a></li>
+          <li><a href="#">Why Us</a></li>
+          <li><a href="#">Portfolio</a></li>
+          <li><a href="#">Testimonials</a></li>
+        </ul>
+      </div>
+      <div class="footer__box--menu-2">
+        <ul class="fmenu">
+          <li><a href="#">Contact Us</a></li>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Terms & Conditions</a></li>
+        </ul>
+      </div>
+      <div class="footer__box--social">
+        <ul class="fsocial">
+          <li>
+            <a href="#">
+              <i class="fab fa-facebook-square"></i>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fab fa-twitter-square"></i>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fab fa-linkedin"></i>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fab fa-github-square"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer__copyright">
+      <p>&copy; All rights reserved by <a href="http://1mandev.com">1ManDev.com</a></p>
+    </div>
   </footer>
   <!-- ========== jQuery ========== -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="./js/jquery-3.4.1.min.js"></script>
+  <script src="./js/flickity.min.js"></script>
+
   <!-- ========== Main Script ========== -->
   <script src="js/main.js"></script>
+
+  <!-- ========== Twak Script ========== -->
+  <script type="text/javascript">
+    var Tawk_API = Tawk_API || {},
+      Tawk_LoadStart = new Date();
+    (function () {
+      var s1 = document.createElement("script"),
+        s0 = document.getElementsByTagName("script")[0];
+      s1.async = true;
+      s1.src = 'https://embed.tawk.to/5c7a80e0a726ff2eea5a40c0/default';
+      s1.charset = 'UTF-8';
+      s1.setAttribute('crossorigin', '*');
+      s0.parentNode.insertBefore(s1, s0);
+    })();
+  </script>
+
 </body>
+
 </html>

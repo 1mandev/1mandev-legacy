@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "G:\\Localhost\\PHPDev\\1mandev\\wp-content\\mu-plugins"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "theme1mandev"
+	}
+}

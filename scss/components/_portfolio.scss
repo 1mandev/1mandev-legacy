@@ -1,0 +1,176 @@
+.portfolio-wrapper {
+  width: 100%;
+  margin-top: 2rem;
+}
+
+.portfolio {
+  background-color: $light-color-1;
+  width: 100%;
+  max-width: 120rem;
+  padding-top: 4rem;
+  border-radius: 10px;
+  margin: 0 auto;
+  overflow: hidden;
+
+  &__content {
+    padding: 0 3rem;
+    display: flex;
+    align-items: center;
+
+    @include respond(tab-port) {
+      flex-direction: column;
+    }
+  }
+
+  &__gallery {
+    flex: 0 0 47%;
+  }
+
+  &__photo {
+    width: 100%;
+    max-height: 48rem;
+    object-fit: cover;
+    object-position: 0 0;
+    box-shadow: 3px 3px 9px darken($light-color, 15%);
+  }
+
+  &__description {
+    flex: 1;
+    padding-right: 6rem;
+    padding-left: 3rem;
+
+    @include respond(tab-port) {
+      padding: 3rem;
+      text-align: center;
+    }
+
+    &--main {
+      padding: 4rem 0;
+      margin-bottom: 4rem;
+
+      @include respond(tab-port) {
+        margin-bottom: 2rem;
+        padding: 4rem 1.5rem;
+      }
+    }
+
+    &--main a {
+      text-decoration: none;
+      cursor: pointer;
+      font-family: $heading-fonts;
+      font-size: 3rem;
+      color: $primary-color;
+      display: inline-block;
+      text-transform: uppercase;
+    }
+
+    &--main p {
+      padding-top: 1rem;
+      max-width: 50rem;
+      font-size: 1.6rem;
+
+      @include respond(phone) {
+        text-align: justify;
+      }
+    }
+
+    &--stack h4 {
+      padding-bottom: 1.1rem;
+    }
+
+    &--stack span {
+      display: inline-flex;
+      justify-content: space-between;
+      align-items: center;
+      text-transform: uppercase;
+      font-size: 1.1rem;
+      background-color: $light-color;
+      padding: 5px 1.5rem;
+      border-radius: 2rem;
+      margin: 1rem 0;
+      color: $primary-color;
+      border: 2px solid darken($light-color, 30%);
+      font-weight: bold;
+      letter-spacing: 1px;
+      margin-right: 0.5rem;
+
+      &:hover {
+        border-color: $secondary-color;
+      }
+    }
+  }
+
+  &__info {
+    background-color: $primary-color;
+    margin-top: 3rem;
+    padding: 3rem 0;
+    display: flex;
+    color: #fff;
+    text-transform: capitalize;
+
+    @include respond(phone) {
+      display: flex;
+      justify-content: center;
+    }
+
+    &--topic {
+      flex: 1;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+
+      @include respond(phone) {
+        flex: 1 1 0;
+        justify-content: flex-end;
+      }
+    }
+
+    &--icon-wrapper {
+      margin-left: 4.5rem;
+
+      @include respond(phone) {
+        margin-left: 3rem;
+        margin-right: 0.5rem;
+      }
+    }
+
+    &--icon {
+      height: 4rem;
+      width: 4rem;
+      fill: #fff;
+
+      @include respond(phone) {
+        height: 3.2rem;
+        width: 3.2rem;
+      }
+    }
+
+    &--text {
+      flex: 0 0 60%;
+    }
+
+    &--text h4 {
+      text-transform: inherit;
+
+      @include respond(phone) {
+        font-size: 1.4rem;
+      }
+    }
+
+    &--text p {
+      font-size: 1.6rem;
+    }
+
+    &--text a {
+      text-decoration: none;
+      cursor: pointer;
+      color: #fff;
+      font-size: 2rem;
+      font-family: $heading-fonts;
+
+      @include respond(phone) {
+        font-size: 1.6rem;
+      }
+    }
+  }
+}

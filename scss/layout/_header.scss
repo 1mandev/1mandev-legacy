@@ -1,0 +1,28 @@
+.nav {
+  &__menu-bar {
+    position: absolute;
+    top: 5rem;
+    right: 10rem;
+    a:first-of-type {
+      margin-right: 1.6rem;
+    }
+
+    &--icon {
+      position: fixed;
+      top: 3rem;
+      right: 2rem;
+      color: $primary-color;
+      font-size: 2.4rem;
+      text-align: center;
+      padding: 1rem;
+      width: 4rem;
+      box-shadow: rgba($dark-color, 0.16) 0 0.2rem 1rem 0;
+      background: $light-color;
+      border-radius: 80%;
+      -webkit-border-radius: 80%;
+      -moz-border-radius: 80%;
+      -ms-border-radius: 80%;
+      -o-border-radius: 80%;
+    }
+  }
+}

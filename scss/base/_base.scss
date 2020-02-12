@@ -1,0 +1,78 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+}
+
+::selection {
+  background-color: $dark-color;
+  color: $primary-color;
+}
+
+html {
+  font-size: 62.5%;
+
+  @include respond(tab-land) {
+    font-size: 56.25%; // 1rem = 9px; 9px/16px = 56.25%;
+  }
+
+  @include respond(tab-port) {
+    font-size: 56.25%; // 1rem = 9px; 9px/16px = 56.25%;
+  }
+
+  @include respond(phone) {
+    font-size: 50%; // 1rem = 8px; 8px/16px = 50%;
+  }
+
+  @include respond(big-desktop) {
+    font-size: 75%; // 1rem = 12px; 12px/16px = 75%;
+  }
+}
+
+body {
+  font-family: $text-fonts;
+  font-size: 1.4rem;
+  color: $dark-color;
+  line-height: 1.6;
+  box-sizing: border-box;
+  margin: 1rem;
+
+  @include respond(phone) {
+    margin: 0;
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $heading-fonts;
+  text-transform: uppercase;
+}
+
+h1 {
+  font-size: 3.2rem;
+}
+
+h2 {
+  font-size: 2.8rem;
+}
+
+h3 {
+  font-size: 2.4rem;
+}
+
+h4 {
+  font-size: 2rem;
+}
+
+h5 {
+  font-size: 1.8rem;
+}
+
+h6 {
+  font-size: 1.6rem;
+}
